@@ -110,7 +110,7 @@
       ease: 'power2.out'
     });
 
-    gsap.utils.toArray('section, .publication, .person-card').forEach((el) => {
+    gsap.utils.toArray('section, .person-card').forEach((el) => {
       gsap.from(el, {
         opacity: 0,
         y: 18,
