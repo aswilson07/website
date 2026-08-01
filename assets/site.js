@@ -1,6 +1,44 @@
 (() => {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const main = document.querySelector('main.page-content');
+  const sidebar = document.querySelector('.site-sidebar');
+
+  if (sidebar && !document.querySelector('.mobile-menu-toggle')) {
+    const button = document.createElement('button');
+    button.className = 'mobile-menu-toggle';
+    button.setAttribute('aria-label', 'Open menu');
+    button.setAttribute('aria-expanded', 'false');
+    button.innerHTML = '<span></span><span></span><span></span>';
+
+    const backdrop = document.createElement('div');
+    backdrop.className = 'menu-backdrop';
+
+    document.body.prepend(backdrop);
+    document.body.prepend(button);
+
+    const closeMenu = () => {
+      sidebar.classList.remove('open');
+      backdrop.classList.remove('active');
+      button.classList.remove('active');
+      button.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('menu-open');
+    };
+
+    const openMenu = () => {
+      sidebar.classList.add('open');
+      backdrop.classList.add('active');
+      button.classList.add('active');
+      button.setAttribute('aria-expanded', 'true');
+      document.body.classList.add('menu-open');
+    };
+
+    button.addEventListener('click', () => sidebar.classList.contains('open') ? closeMenu() : openMenu());
+    backdrop.addEventListener('click', closeMenu);
+    sidebar.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeMenu();
+    });
+  }
 
   if (!main || reduceMotion) return;
 
@@ -11,7 +49,9 @@
   });
 
   let locoScroll = null;
-  const canSmoothScroll = window.innerWidth >= 1024 && window.LocomotiveScroll;
+  // Keep Locomotive Scroll available but disabled by default; native scrolling is
+  // more predictable with filtered publication lists and fixed side navigation.
+  const canSmoothScroll = false;
 
   if (canSmoothScroll) {
     locoScroll = new LocomotiveScroll({
@@ -45,12 +85,14 @@
       }
     }
 
-    gsap.from('.site-sidebar', {
-      opacity: 0,
-      x: -12,
-      duration: 0.7,
-      ease: 'power2.out'
-    });
+    if (window.innerWidth >= 1024) {
+      gsap.from('.site-sidebar', {
+        opacity: 0,
+        x: -12,
+        duration: 0.7,
+        ease: 'power2.out'
+      });
+    }
 
     gsap.from('.elegant-title', {
       opacity: 0,
