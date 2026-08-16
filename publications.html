@@ -69,6 +69,8 @@
           ? pub.dataset.selected === 'true'
           : pub.dataset.tags.split(' ').includes(filter);
         pub.classList.toggle('hidden', !show);
+        const description = pub.querySelector('.publication-description');
+        if (description) description.classList.toggle('hidden', filter !== 'selected');
         if (show) {
           pub.style.opacity = '1';
           pub.style.transform = 'none';
