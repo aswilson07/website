@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Publications | Ashia C. Wilson</title><link rel="icon" href="assets/icons/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"><link rel="stylesheet" href="assets/site.css"></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications | Ashia C. Wilson</title>
+  <link rel="icon" href="assets/icons/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
 <body>
-  <aside class="site-sidebar"><div class="menu-category"><a href="index.html">Ashia C. Wilson</a></div><div class="menu-item"><a href="index.html">Home</a></div><div class="menu-item"><a href="bio.html">Bio</a></div><div class="menu-category">Research</div><div class="menu-item"><a href="group.html">Group</a></div><div class="menu-item"><a href="research.html">Topics</a></div><div class="menu-item"><a class="current" href="publications.html">Publications</a></div><div class="menu-item"><a href="talks.html">Talks</a></div><div class="menu-item"><a href="new_students.html">Prospective Students</a></div></aside>
-  <main class="page-content with-sidebar">
-    <h1 class="elegant-title">Publications</h1>
-    <p>Selected recent publications and working papers. For a full list, see <a href="https://scholar.google.com/citations?hl=en&user=sV61CtsAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
+  <div class="page-wrapper">
+    <!-- Page Hero -->
+    <header class="page-hero">
+      <nav class="top-nav">
+        <div class="site-title">Ashia C. Wilson</div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="bio.html" class="nav-link">Bio</a>
+          <a href="group.html" class="nav-link">Group</a>
+          <a href="research.html" class="nav-link">Topics</a>
+          <a href="publications.html" class="nav-link active">Publications</a>
+          <a href="talks.html" class="nav-link">Talks</a>
+          <a href="new_students.html" class="nav-link">Prospective Students</a>
+        </div>
+      </nav>
+      <div class="page-hero-content">
+        <h1>Publications</h1>
+        <p class="page-description">For a full list, see <a href="https://scholar.google.com/citations?hl=en&user=sV61CtsAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer" style="color: oklch(0.82 0.12 70);">Google Scholar</a>.</p>
+      </div>
+    </header>
 
-    <div style="display:flex;flex-wrap:wrap;gap:.75rem;margin:1.5rem 0 2rem">
-      <button class="tag-button active" data-filter="selected">Selected</button>
-      <button class="tag-button" data-filter="optimization">Optimization</button>
-      <button class="tag-button" data-filter="safety">Safety</button>
-      <button class="tag-button" data-filter="evaluation">Evaluation</button>
+    <!-- Filter Bar Wrapper -->
+    <div style="background: #fff;">
+    <div class="filter-bar">
+      <button class="filter-button active" data-filter="all">All</button>
+      <button class="filter-button" data-filter="optimization">∇ Optimization</button>
+      <button class="filter-button" data-filter="safety">◆ Safety</button>
+      <button class="filter-button" data-filter="evaluation">✓ Evaluation</button>
     </div>
 
+<<<<<<< HEAD
     <section id="publication-list">
       <div class="publication" data-tags="optimization" data-selected="true"><span class="venue-badge">Preprint 2026</span><h3>SoftWater: Class-Aware Rate Allocation for Softmax Quantization</h3><p class="publication-authors">with Joao Cavalcanti. <a href="https://arxiv.org/abs/2608.12026">arXiv</a></p><p class="publication-description">Quantization reduces the memory and computational costs of large models, making them cheaper to store and run and more broadly accessible. We develop SoftWater, a class-aware approach to output-layer quantization that allocates precision according to the geometry of the model's predictive distribution.</p></div>
       <div class="publication" data-tags="optimization safety"><span class="venue-badge">Preprint 2026</span><h3>The Fast Mixing Mechanism for Differential Privacy</h3><p>with Omri Lev, Moshe Shenfeld, Vishwak Srinivasan, Katrina Ligett. <a href="https://arxiv.org/abs/2605.30600">arXiv</a></p></div>
@@ -42,59 +71,258 @@
       <div class="publication" data-tags="optimization"><span class="venue-badge">Preprint 2025</span><h3>Adaptive kernel selection for Stein Variational Gradient Descent</h3><p>with Moritz Melcher, Simon Weissmann, Jakob Zech. <a href="https://arxiv.org/abs/2510.02067">arXiv</a></p></div>
     </section>
   </main>
+=======
+    </div>
+
+    <!-- Publications List -->
+    <div style="background: #fff;">
+    <div class="publications-list">
+      <div class="publication" data-tags="optimization">
+        <div class="pub-meta">PREPRINT 2026</div>
+        <div class="pub-content">
+          <h3>SoftWater: Class-Aware Rate Allocation for Softmax Quantization</h3>
+          <p class="pub-authors">with Joao Cavalcanti. <a href="https://arxiv.org/abs/2608.12026">arXiv</a> · <span class="pub-topic">∇ Optimization</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="optimization safety">
+        <div class="pub-meta">PREPRINT 2026</div>
+        <div class="pub-content">
+          <h3>The Fast Mixing Mechanism for Differential Privacy</h3>
+          <p class="pub-authors">with Omri Lev, Moshe Shenfeld, Vishwak Srinivasan, Katrina Ligett. <a href="https://arxiv.org/abs/2605.30600">arXiv</a> · <span class="pub-topic">∇ Optimization · ◆ Safety</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="evaluation">
+        <div class="pub-meta">ICLR HCAIR WORKSHOP</div>
+        <div class="pub-content">
+          <h3>Alignment has a Fantasia Problem</h3>
+          <p class="pub-authors">with Nathanael Jo, Zoe De Simone, Mitchell Gordon. <a href="https://arxiv.org/pdf/2604.21827">arXiv</a> · <span class="pub-topic">✓ Evaluation</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="evaluation">
+        <div class="pub-meta">AISTATS OPTIMAL WORKSHOP 2026</div>
+        <div class="pub-content">
+          <h3>Pandora's Regret: A Proper Scoring Rule for Evaluating Sequential Search</h3>
+          <p class="pub-authors">with Gerardo Flores, Yash Deshpande, Jannis R. Brea. <a href="https://arxiv.org/pdf/2605.01936">arXiv</a> · <span class="pub-topic">✓ Evaluation</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="safety">
+        <div class="pub-meta">PREPRINT 2026</div>
+        <div class="pub-content">
+          <h3>Creo: From One-Shot Image Generation to Progressive, Co-Creative Ideation</h3>
+          <p class="pub-authors">with Zoe De Simone, Angie Boggust, Fredo Durand, Arvind Satyanarayan. <a href="https://arxiv.org/pdf/2604.13956">arXiv</a> · <span class="pub-topic">◆ Safety</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="safety evaluation">
+        <div>
+          <div class="pub-meta">AI4GOOD WORKSHOP</div>
+          <div class="pub-badge">SPOTLIGHT</div>
+        </div>
+        <div class="pub-content">
+          <h3>Evaluation without Generation</h3>
+          <p class="pub-authors">with Vinith Suriyakumar, Ayush Sekhari, Lena Stempfle, Robertson Wang, Michael Simpson, Rebecca Portnoff, Marzyeh Ghassemi. <a href="https://arxiv.org/abs/2604.25119">arXiv</a> · <span class="pub-topic">◆ Safety · ✓ Evaluation</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="optimization">
+        <div class="pub-meta">COLT 2026</div>
+        <div class="pub-content">
+          <h3>Accelerated Convex Optimization via Hamiltonian Dynamics with Deterministic Integration Time</h3>
+          <p class="pub-authors">with Xiuyuan Wang, Vishwak Srinivasan, Qiang Fu, Siddharth Mitra, Andre Wibisono. <span class="pub-topic">∇ Optimization</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="evaluation">
+        <div class="pub-meta">AISTATS 2026</div>
+        <div class="pub-content">
+          <h3>A Consequentialist Critique of Binary Classification Evaluation: Theory, Practice, and Tools</h3>
+          <p class="pub-authors">with Gerardo Flores, Abby Schiff, Alyssa Smith, Julia Fukuyama. <a href="https://arxiv.org/pdf/2504.04528">arXiv</a> · <span class="pub-topic">✓ Evaluation</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="safety evaluation">
+        <div>
+          <div class="pub-meta">CHI 2026</div>
+          <div class="pub-badge outline">HONORABLE MENTION</div>
+        </div>
+        <div class="pub-content">
+          <h3>Interaction Context Often Increases Sycophancy in LLMs</h3>
+          <p class="pub-authors">with Shomik Jain, Charlotte Park, Matheus Vianna, Dana Calacci. <a href="https://arxiv.org/pdf/2509.12517">arXiv</a> · <span class="pub-topic">◆ Safety · ✓ Evaluation</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="evaluation">
+        <div class="pub-meta">ICML 2026</div>
+        <div class="pub-content">
+          <h3>Position: AI Evaluations Should be Grounded on a Theory of Capability</h3>
+          <p class="pub-authors">with Nathan Jo. <a href="https://arxiv.org/pdf/2509.19590">arXiv</a> · <span class="pub-topic">✓ Evaluation</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="safety optimization">
+        <div>
+          <div class="pub-meta">ICML 2026</div>
+          <div class="pub-badge">SPOTLIGHT</div>
+        </div>
+        <div class="pub-content">
+          <h3>Private Linear Regression</h3>
+          <p class="pub-authors">with Omri Lev, Vishwak Srinivasan, Moshe Shenfeld, Katrina Ligett. <a href="https://arxiv.org/pdf/2601.07545">arXiv</a> · <span class="pub-topic">∇ Optimization · ◆ Safety</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="safety">
+        <div class="pub-meta">PREPRINT 2026</div>
+        <div class="pub-content">
+          <h3>Efficient and accurate steering of Large Language Models through attention-guided feature learning</h3>
+          <p class="pub-authors">with Parmida Davarmanesh, Adityanarayanan Radhakrishnan. <a href="https://arxiv.org/abs/2602.00333">arXiv</a> · <span class="pub-topic">◆ Safety</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="evaluation safety">
+        <div class="pub-meta">FACCT 2026</div>
+        <div class="pub-content">
+          <h3>Impacts of Semivalue-Based Data Curation on Fair Machine Learning Outcomes</h3>
+          <p class="pub-authors">with Hannah Diehl, Justin Steil. <a href="https://facctconference.org/2026/acceptedpapers.html" target="_blank" rel="noopener noreferrer">paper</a> · <span class="pub-topic">✓ Evaluation · ◆ Safety</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="evaluation">
+        <div class="pub-meta">NEURIPS 2025</div>
+        <div class="pub-content">
+          <h3>Aligning Evaluation with Clinical Priorities: Calibration, Label Shift, and Error Costs</h3>
+          <p class="pub-authors">with Gerardo Flores, Alyssa Smith, Julia Fukuyama. <a href="https://arxiv.org/pdf/2506.14540">arXiv</a> · <span class="pub-topic">✓ Evaluation</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="safety optimization">
+        <div class="pub-meta">NEURIPS 2025</div>
+        <div class="pub-content">
+          <h3>The Gaussian Mixing Mechanism: Renyi Differential Privacy via Gaussian Sketches</h3>
+          <p class="pub-authors">with Omri Lev, Vishwak Srinivasan, Moshe Shenfeld, Katrina Ligett, Ayush Sekhari. <a href="https://arxiv.org/pdf/2505.24603">arXiv</a> · <span class="pub-topic">◆ Safety · ∇ Optimization</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="safety">
+        <div class="pub-meta">NEURIPS 2025</div>
+        <div class="pub-content">
+          <h3>Homogeneous Algorithms Can Reduce Competition in Personalized Pricing</h3>
+          <p class="pub-authors">with Nathan Jo, Kathleen Creel, Manish Raghavan. <a href="https://arxiv.org/pdf/2503.15634">arXiv</a> · <span class="pub-topic">◆ Safety</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="optimization">
+        <div class="pub-meta">ICLR 2025</div>
+        <div class="pub-content">
+          <h3>Adaptive Backtracking Line Search</h3>
+          <p class="pub-authors">with Laurent Lessard, Joao Cavalcanti. <a href="https://arxiv.org/pdf/2408.13150">arXiv</a> · <span class="pub-topic">∇ Optimization</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="optimization">
+        <div class="pub-meta">ALT 2025</div>
+        <div class="pub-content">
+          <h3>High-accuracy sampling from constrained spaces with the Metropolis-adjusted Preconditioned Langevin Algorithm</h3>
+          <p class="pub-authors">with Vishwak Srinivasan, Andre Wibisono. <a href="https://arxiv.org/pdf/2412.18701">arXiv</a> · <span class="pub-topic">∇ Optimization</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="safety evaluation">
+        <div class="pub-meta">FACCT 2025</div>
+        <div class="pub-content">
+          <h3>Allocation Multiplicity: Evaluating the Promises of the Rashomon Set</h3>
+          <p class="pub-authors">with Shomik Jain, Margaret Wang, Kathleen Creel. <a href="https://arxiv.org/pdf/2503.16621v1">arXiv</a> · <span class="pub-topic">◆ Safety · ✓ Evaluation</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="safety">
+        <div>
+          <div class="pub-meta">FACCT 2024</div>
+          <div class="pub-badge">BEST PAPER</div>
+        </div>
+        <div class="pub-content">
+          <h3>Algorithmic Pluralism: A Structural Approach To Equal Opportunity</h3>
+          <p class="pub-authors">with Shomik Jain, Vinith Suriyakumar, Kathleen Creel. <a href="https://arxiv.org/pdf/2305.08157.pdf">arXiv</a> · <span class="pub-topic">◆ Safety</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="safety">
+        <div class="pub-meta">ICML 2024</div>
+        <div class="pub-content">
+          <h3>Scarce Resource Allocations That Rely On Machine Learning Should Be Randomized</h3>
+          <p class="pub-authors">with Shomik Jain, Kathleen Creel. <a href="https://arxiv.org/pdf/2404.08592.pdf">arXiv</a> · <span class="pub-topic">◆ Safety</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="safety evaluation">
+        <div class="pub-meta">TMLR 2026</div>
+        <div class="pub-content">
+          <h3>Unstable Unlearning: The Hidden Risk of Concept Resurgence in Diffusion Models</h3>
+          <p class="pub-authors">with Vinith Suriyakumar, Rohan Alur, Ayush Sekhari, Manish Raghavan. <a href="https://arxiv.org/pdf/2410.08074">arXiv</a> · <span class="pub-topic">◆ Safety · ✓ Evaluation</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="safety">
+        <div class="pub-meta">PREPRINT 2025</div>
+        <div class="pub-content">
+          <h3>LLM Output Homogenization is Task Dependent</h3>
+          <p class="pub-authors">with Shomik Jain, Jack Lanchantin, Maximilian Nickel, Karen Ullrich, Jamelle Watson-Daniels. <a href="https://arxiv.org/abs/2509.21267">arXiv</a> · <span class="pub-topic">◆ Safety</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="safety">
+        <div class="pub-meta">PREPRINT 2025</div>
+        <div class="pub-content">
+          <h3>UCD: Unlearning in LLMs via Contrastive Decoding</h3>
+          <p class="pub-authors">with Vinith M. Suriyakumar, Ayush Sekhari. <a href="https://arxiv.org/pdf/2506.12097">arXiv</a> · <span class="pub-topic">◆ Safety</span></p>
+        </div>
+      </div>
+
+      <div class="publication" data-tags="optimization">
+        <div class="pub-meta">PREPRINT 2025</div>
+        <div class="pub-content">
+          <h3>Adaptive kernel selection for Stein Variational Gradient Descent</h3>
+          <p class="pub-authors">with Moritz Melcher, Simon Weissmann, Jakob Zech. <a href="https://arxiv.org/abs/2510.02067">arXiv</a> · <span class="pub-topic">∇ Optimization</span></p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-new">
+      © 2026 Ashia C. Wilson
+    </footer>
+  </div>
+
+>>>>>>> 8980878 (claude code in this itch)
   <script>
-    const topicLabels = { optimization: 'Optimization', safety: 'Safety', evaluation: 'Evaluation' };
-
-    function renderTopicBadges(pub, filter = 'all') {
-      pub.querySelectorAll('.topic-badge').forEach(badge => badge.remove());
-      const venue = pub.querySelector('.venue-badge');
-      const tags = pub.dataset.tags.split(' ');
-      const orderedTags = filter !== 'all' && tags.includes(filter)
-        ? [filter, ...tags.filter(tag => tag !== filter)]
-        : tags;
-
-      orderedTags.forEach(topic => {
-        const badge = document.createElement('span');
-        badge.className = `topic-badge ${topic}`;
-        badge.textContent = topicLabels[topic];
-        pub.insertBefore(badge, venue);
-      });
-    }
-
-    document.querySelectorAll('.publication').forEach(pub => renderTopicBadges(pub));
-
-    function applyPublicationFilter(filter) {
-      document.querySelectorAll('.publication').forEach(pub => {
-        const show = filter === 'selected'
-          ? pub.dataset.selected === 'true'
-          : pub.dataset.tags.split(' ').includes(filter);
-        pub.classList.toggle('hidden', !show);
-        const description = pub.querySelector('.publication-description');
-        if (description) description.classList.toggle('hidden', filter !== 'selected');
-        if (show) {
-          pub.style.opacity = '1';
-          pub.style.transform = 'none';
-        }
-        renderTopicBadges(pub, filter);
-      });
-    }
-
-    document.querySelectorAll('.tag-button').forEach(button => {
+    document.querySelectorAll('.filter-button').forEach(button => {
       button.addEventListener('click', () => {
         const filter = button.dataset.filter;
-        document.querySelectorAll('.tag-button').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.filter-button').forEach(b => b.classList.remove('active'));
         button.classList.add('active');
-        applyPublicationFilter(filter);
-        if (window.ScrollTrigger) window.ScrollTrigger.refresh();
+
+        document.querySelectorAll('.publication').forEach(pub => {
+          const tags = pub.dataset.tags.split(' ');
+          const show = filter === 'all' || tags.includes(filter);
+          pub.style.display = show ? 'grid' : 'none';
+        });
       });
     });
 
+    // Handle URL parameter for filter
     const params = new URLSearchParams(window.location.search);
-    const initialFilter = params.get('filter') || 'selected';
-    const initialButton = document.querySelector(`.tag-button[data-filter="${initialFilter}"]`) || document.querySelector('.tag-button[data-filter="selected"]');
-    document.querySelectorAll('.tag-button').forEach(b => b.classList.remove('active'));
-    initialButton.classList.add('active');
-    applyPublicationFilter(initialButton.dataset.filter);
+    const initialFilter = params.get('filter');
+    if (initialFilter && ['optimization', 'safety', 'evaluation'].includes(initialFilter)) {
+      const button = document.querySelector(`.filter-button[data-filter="${initialFilter}"]`);
+      if (button) {
+        button.click();
+      }
+    }
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script><script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script><script src="assets/site.js"></script>
-</body></html>
+  <script src="assets/site.js"></script>
+</body>
+</html>

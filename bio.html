@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Bio | Ashia C. Wilson</title><link rel="icon" href="assets/icons/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"><link rel="stylesheet" href="assets/site.css"></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bio | Ashia C. Wilson</title>
+  <link rel="icon" href="assets/icons/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
 <body>
-  <aside class="site-sidebar">
-    <div class="menu-category"><a href="index.html">Ashia C. Wilson</a></div><div class="menu-item"><a href="index.html">Home</a></div><div class="menu-item"><a class="current" href="bio.html">Bio</a></div>
-    <div class="menu-category">Research</div><div class="menu-item"><a href="group.html">Group</a></div><div class="menu-item"><a href="research.html">Topics</a></div><div class="menu-item"><a href="publications.html">Publications</a></div><div class="menu-item"><a href="talks.html">Talks</a></div><div class="menu-item"><a href="new_students.html">Prospective Students</a></div>
-  </aside>
-  <main class="page-content with-sidebar">
-    <h1 class="elegant-title">Bio</h1>
-    <p class="muted">Below are short and long academic biographies for use by collaborators, event organizers, and other partners.</p>
+  <div class="page-wrapper">
+    <!-- Page Hero -->
+    <header class="page-hero">
+      <nav class="top-nav">
+        <div class="site-title">Ashia C. Wilson</div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="bio.html" class="nav-link active">Bio</a>
+          <a href="group.html" class="nav-link">Group</a>
+          <a href="research.html" class="nav-link">Topics</a>
+          <a href="publications.html" class="nav-link">Publications</a>
+          <a href="talks.html" class="nav-link">Talks</a>
+          <a href="new_students.html" class="nav-link">Prospective Students</a>
+        </div>
+      </nav>
+      <div class="page-hero-content">
+        <h1>Bio</h1>
+        <p class="page-description">Below are short and long academic biographies for use by collaborators, event organizers, and other partners.</p>
+      </div>
+    </header>
 
-    <section>
-      <h2>Academic Bio (Short)</h2>
-      <p>Ashia C. Wilson is the Lister Brothers Career Development Associate Professor in MIT’s Department of Electrical Engineering and Computer Science, where she directs the Optimization, Safety, and Evaluation (OSE) Lab. Her research develops foundations for efficient optimization and sampling, safer AI systems, and rigorous, decision-relevant evaluation. Her work has received a Best Paper Award at ACM FAccT, spotlight selections at NeurIPS, ICML, and ACM CHI.</p>
-    </section>
+    <!-- Main Content -->
+    <main class="page-content-new">
+      <div class="bio-section">
+        <h2>Academic Bio (Short)</h2>
+        <p>Ashia C. Wilson is the Lister Brothers Career Development Associate Professor in MIT's Department of Electrical Engineering and Computer Science, where she directs the Optimization, Safety, and Evaluation (OSE) Lab. Her research develops foundations for efficient optimization and sampling, safer AI systems, and rigorous, decision-relevant evaluation. Her work has received a Best Paper Award at ACM FAccT, spotlight selections at NeurIPS, ICML, and ACM CHI.</p>
+      </div>
 
-    <section>
-      <h2>Academic Bio (Long)</h2>
-      <p>Dr. Ashia C. Wilson is the Lister Brothers Career Development Associate Professor in the Department of Electrical Engineering and Computer Science at MIT. She is affiliated with the MIT Laboratory for Information and Decision Systems, the Statistics and Data Science Center, and MIT AI for Society.</p>
-      <p>She directs the Optimization, Safety, and Evaluation (OSE) Lab, which develops foundations for building AI systems that are efficient, safe, and meaningfully evaluated. Her research is organized around three connected themes: the design of efficient optimization and sampling algorithms for modern machine learning; methods and foundations for AI safety, with a focus on child safety, image-based abuse, and epistemic harms such as homogenization and sycophancy; and evaluation methods that support valid, decision-relevant conclusions about AI systems’ capabilities, limitations, and societal impacts.</p>
-      <p>Her research has been recognized with a Best Paper Award at ACM FAccT, spotlight selections at NeurIPS, ICML, and ACM CHI. She is also a recipient of MIT’s 2026 Junior Bose Award for outstanding contributions to education.</p>
-      <p>Dr. Wilson earned a B.A. from Harvard University, concentrating in applied mathematics with a secondary field in philosophy, and a Ph.D. in statistics from the University of California, Berkeley. Before joining MIT, she was a postdoctoral researcher in the Machine Learning and Statistics group at Microsoft Research.</p>
-    </section>
-  </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script><script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script><script src="assets/site.js"></script>
-</body></html>
+      <div class="bio-section">
+        <h2>Academic Bio (Long)</h2>
+        <div class="bio-long">
+          <p>Dr. Ashia C. Wilson is the Lister Brothers Career Development Associate Professor in the Department of Electrical Engineering and Computer Science at MIT. She is affiliated with the MIT Laboratory for Information and Decision Systems, the Statistics and Data Science Center, and MIT AI for Society.</p>
+          <p>She directs the Optimization, Safety, and Evaluation (OSE) Lab, which develops foundations for building AI systems that are efficient, safe, and meaningfully evaluated. Her research is organized around three connected themes: the design of efficient optimization and sampling algorithms for modern machine learning; methods and foundations for AI safety, with a focus on child safety, image-based abuse, and epistemic harms such as homogenization and sycophancy; and evaluation methods that support valid, decision-relevant conclusions about AI systems' capabilities, limitations, and societal impacts.</p>
+          <p>Her research has been recognized with a Best Paper Award at ACM FAccT, spotlight selections at NeurIPS, ICML, and ACM CHI. She is also a recipient of MIT's 2026 Junior Bose Award for outstanding contributions to education.</p>
+          <p>Dr. Wilson earned a B.A. from Harvard University, concentrating in applied mathematics with a secondary field in philosophy, and a Ph.D. in statistics from the University of California, Berkeley. Before joining MIT, she was a postdoctoral researcher in the Machine Learning and Statistics group at Microsoft Research.</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-new">
+      © 2026 Ashia C. Wilson
+    </footer>
+  </div>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

@@ -6,61 +6,89 @@
   <title>Ashia C. Wilson - MIT Professor | Machine Learning & Statistics</title>
   <meta name="description" content="Ashia C. Wilson is a Lister Brothers Career Development Associate Professor at MIT EECS researching optimization, safety, evaluation, privacy, and fairness in machine learning.">
   <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"><link rel="stylesheet" href="assets/site.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <aside class="site-sidebar">
-    <div class="menu-category"><a href="index.html">Ashia C. Wilson</a></div>
-    <div class="menu-item"><a class="current" href="index.html">Home</a></div>
-    <div class="menu-item"><a href="bio.html">Bio</a></div>
-    <div class="menu-category">Research</div>
-    <div class="menu-item"><a href="group.html">Group</a></div>
-    <div class="menu-item"><a href="research.html">Topics</a></div>
-    <div class="menu-item"><a href="publications.html">Publications</a></div>
-    <div class="menu-item"><a href="talks.html">Talks</a></div>
-    <div class="menu-item"><a href="new_students.html">Prospective Students</a></div>
-  </aside>
+  <div class="page-wrapper">
+    <!-- Dark Hero Section -->
+    <header class="hero-dark">
+      <nav class="top-nav">
+        <div class="site-title">Ashia C. Wilson</div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="bio.html" class="nav-link">Bio</a>
+          <a href="group.html" class="nav-link">Group</a>
+          <a href="research.html" class="nav-link">Topics</a>
+          <a href="publications.html" class="nav-link">Publications</a>
+          <a href="talks.html" class="nav-link">Talks</a>
+          <a href="new_students.html" class="nav-link">Prospective Students</a>
+        </div>
+      </nav>
 
-  <main class="page-content with-sidebar">
-    <section class="hero">
-      <div>
-        <h1 class="elegant-title">Ashia C. Wilson</h1>
-        <p class="subtitle">Lister Brothers Career Development Associate Professor, MIT</p>
-        <p class="muted affiliations-line">
-          <a href="https://www.eecs.mit.edu/" target="_blank" rel="noopener noreferrer">MIT EECS</a>,
-          <a href="https://lids.mit.edu/" target="_blank" rel="noopener noreferrer">LIDS</a>,
-          <a href="https://ai4society.mit.edu/" target="_blank" rel="noopener noreferrer">AI for Society</a>,
-          <a href="https://stat.mit.edu/core/" target="_blank" rel="noopener noreferrer">SDSC</a>
-        </p>
-        <p class="muted">
-          ashia07@mit.edu · Stata Center ·
-          <a href="https://scholar.google.com/citations?hl=en&user=sV61CtsAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer">Google Scholar</a> ·
-          <a href="https://github.com/aswilson07" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </p>
-        <h2 class="section-title">Research</h2>
-        <p>
-          Dr. Ashia Wilson runs the <strong>Optimization, Safety, and Evaluation (OSE) Lab</strong>.
-        The lab develops foundations for machine learning systems that are efficient, safe, and meaningfully evaluated. Our work spans optimization and sampling methods for efficient and reliable learning at scale; AI safety, with a focus on image-based abuse, child safety, and epistemic harms such as homogenization and sycophancy; and evaluation methods that support valid, decision-relevant conclusions about AI systems and their societal impacts.        </p>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Ashia C. Wilson</h1>
+          <p class="hero-subtitle">Lister Brothers Career Development Associate Professor, MIT</p>
+          <div class="affiliation-tags">
+            <span class="tag">MIT EECS</span>
+            <span class="tag">LIDS</span>
+            <span class="tag">AI for Society</span>
+            <span class="tag">SDSC</span>
+          </div>
+          <div class="contact-info">
+            ashia07@mit.edu · Stata Center ·
+            <a href="https://scholar.google.com/citations?hl=en&user=sV61CtsAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer">Google Scholar</a> ·
+            <a href="https://github.com/aswilson07" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/images/aw.png" alt="Ashia C. Wilson">
+        </div>
       </div>
-      <img class="profile-img" src="assets/images/aw.png" alt="Ashia C. Wilson">
-    </section>
+    </header>
 
-    <section>
-      <h2 class="section-title">Recent News</h2>
-      <ul>
-        <li>Our work on <a href="https://arxiv.org/pdf/2601.07545" target="_blank" rel="noopener noreferrer"> Private Linear Regression</a> received an ICML <strong>Spotlight</strong>.</li>
-        <li>I am co-organizing a workshop at NeurIPS this year on <a href="https://childsafety-ai.github.io/" target="_blank" rel="noopener noreferrer">child safety</a>.</li>
-        <li><a href="https://arxiv.org/abs/2604.25119" target="_blank" rel="noopener noreferrer">“Evaluation without Generation”</a> received a <strong>Spotlight</strong> at the AI4GOOD Workshop and was highlighted in <a href="https://news.mit.edu/2026/new-method-keeps-kids-safe-from-illegal-ai-generated-content-0713" target="_blank" rel="noopener noreferrer">MIT News</a>.</li>
-        <li>I co-organized a <a href="https://unlearning-tutorial.github.io/" target="_blank" rel="noopener noreferrer">tutorial at ICML on unlearning</a>.</li>
-        <li>Our work <a href="https://arxiv.org/pdf/2509.12517" target="_blank" rel="noopener noreferrer">studying Sycophancy</a> received an <strong>honorable mention</strong> at this year's CHI Conference and was highlighted in <a href="https://news.mit.edu/2026/personalization-features-can-make-llms-more-agreeable-0218" target="_blank" rel="noopener noreferrer">MIT News.</a></li>
-        <li>I was named <a href="https://engineering.mit.edu/news/ashia-wilson-named-junior-bose-award-winner" target="_blank" rel="noopener noreferrer">Junior Bose Award winner.</a></li>
-        <li>Multiple recent papers accepted to ICML, AISTATS, CHI, FAccT, COLT, and TMLR.</li>
-        
-      </ul>
- </section>
+    <!-- Main Content -->
+    <main class="page-content-new">
+      <!-- Research Section -->
+      <section class="content-section">
+        <div class="section-grid">
+          <h2 class="section-label">Research</h2>
+          <div class="section-body">
+            <p class="lead-text">Dr. Ashia Wilson runs the <strong>Optimization, Safety, and Evaluation (OSE) Lab</strong>. The lab develops foundations for machine learning systems that are efficient, safe, and meaningfully evaluated. Our work spans optimization and sampling methods for efficient and reliable learning at scale; AI safety, with a focus on image-based abuse, child safety, and epistemic harms such as homogenization and sycophancy; and evaluation methods that support valid, decision-relevant conclusions about AI systems and their societal impacts.</p>
+          </div>
+        </div>
+      </section>
 
-    <footer class="footer">&copy; 2026 Ashia C. Wilson</footer>
-  </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script><script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script><script src="assets/site.js"></script>
+      <div class="section-divider"></div>
+
+      <!-- Recent News Section -->
+      <section class="content-section">
+        <div class="section-grid">
+          <h2 class="section-label">Recent News</h2>
+          <div class="section-body">
+            <div class="news-list">
+              <p class="news-item">Our work on <a href="https://arxiv.org/pdf/2601.07545" target="_blank" rel="noopener noreferrer">Private Linear Regression</a> received an ICML <strong>Spotlight</strong>.</p>
+              <p class="news-item">I am co-organizing a workshop at NeurIPS this year on <a href="https://childsafety-ai.github.io/" target="_blank" rel="noopener noreferrer">child safety</a>.</p>
+              <p class="news-item"><a href="https://arxiv.org/abs/2604.25119" target="_blank" rel="noopener noreferrer">"Evaluation without Generation"</a> received a <strong>Spotlight</strong> at the AI4GOOD Workshop and was highlighted in <a href="https://news.mit.edu/2026/new-method-keeps-kids-safe-from-illegal-ai-generated-content-0713" target="_blank" rel="noopener noreferrer">MIT News</a>.</p>
+              <p class="news-item">I co-organized a <a href="https://unlearning-tutorial.github.io/" target="_blank" rel="noopener noreferrer">tutorial at ICML on unlearning</a>.</p>
+              <p class="news-item">Our work <a href="https://arxiv.org/pdf/2509.12517" target="_blank" rel="noopener noreferrer">studying Sycophancy</a> received an <strong>honorable mention</strong> at this year's CHI Conference and was highlighted in <a href="https://news.mit.edu/2026/personalization-features-can-make-llms-more-agreeable-0218" target="_blank" rel="noopener noreferrer">MIT News.</a></p>
+              <p class="news-item">I was named <a href="https://engineering.mit.edu/news/ashia-wilson-named-junior-bose-award-winner" target="_blank" rel="noopener noreferrer">Junior Bose Award winner.</a></p>
+              <p class="news-item news-item-last">Multiple recent papers accepted to ICML, AISTATS, CHI, FAccT, COLT, and TMLR.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-new">
+      © 2026 Ashia C. Wilson
+    </footer>
+  </div>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>
