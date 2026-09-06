@@ -125,6 +125,13 @@ html {
   border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 100px;
   padding: 7px 13px;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.affiliation-tags .tag:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 .contact-info {
@@ -443,6 +450,7 @@ html {
   flex: none;
   border-radius: 50%;
   background: repeating-linear-gradient(135deg, #e8e4dc 0 8px, #f2efe9 8px 16px);
+  object-fit: cover;
 }
 
 .pi-info .pi-name {
@@ -474,6 +482,7 @@ html {
   background: repeating-linear-gradient(135deg, #e8e4dc 0 8px, #f2efe9 8px 16px);
   max-width: 120px;
   margin: 0 auto;
+  object-fit: cover;
 }
 
 .person-name {
@@ -523,6 +532,7 @@ html {
   flex: none;
   border-radius: 50%;
   background: repeating-linear-gradient(135deg, #e8e4dc 0 6px, #f2efe9 6px 12px);
+  object-fit: cover;
 }
 
 .alumni-name {
@@ -665,6 +675,13 @@ html {
 
 .pub-topic {
   color: #1a1713;
+}
+
+.pub-description {
+  margin: 12px 0 0;
+  font: 400 14px/1.6 'Libre Franklin', sans-serif;
+  color: rgba(26, 23, 19, 0.7);
+  max-width: 66ch;
 }
 
 /* Talks Page Styles */
