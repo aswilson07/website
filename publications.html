@@ -45,45 +45,22 @@
   </main>
     </div>
 
-    <!-- Research framing shown for filtered publication areas -->
-<div class="publication-framing" id="evaluation-framing">
-  <div class="publication-framing-inner">
-    <p class="framing-kicker">Evaluation</p>
-
-    <p class="framing-statement">
-      Evaluation is an inference problem. We study what should be measured,
-      how observations can support claims about underlying capabilities or harms,
-      and how evaluation protocols should account for the contexts and consequences
-      in which AI systems are actually used.
-    </p>
-
-    <div class="framing-questions">
-      <div class="framing-question">
-        <h3>What are we trying to measure?</h3>
-        <p>
-          How should latent concepts such as capability, sycophancy, or successful
-          assistance be defined and operationalized?
+    <!-- Shown only when the Evaluation filter is active -->
+    <section class="evaluation-intro" id="evaluation-intro" aria-labelledby="evaluation-intro-title">
+      <div class="evaluation-intro-inner">
+        <h2 id="evaluation-intro-title">Evaluation is an inference problem.</h2>
+        <p class="evaluation-intro-statement">
+          We study how to define what should be measured, determine what outcomes matter,
+          and understand what conclusions observations can support about the capabilities,
+          behaviors, and harms of AI systems.
         </p>
+        <div class="evaluation-questions">
+          <p><strong>What are we trying to measure?</strong> Defining and operationalizing latent constructs such as capability, sycophancy, and successful assistance.</p>
+          <p><strong>What outcomes actually matter?</strong> Connecting evaluation to downstream decisions, consequences, and deployment priorities.</p>
+          <p><strong>What does the evidence establish?</strong> Understanding how context, interaction, model updates, and observation constraints shape the claims an evaluation can support.</p>
+        </div>
       </div>
-
-      <div class="framing-question">
-        <h3>What outcomes actually matter?</h3>
-        <p>
-          How should evaluation reflect downstream decisions, consequences,
-          and the priorities of the deployment setting?
-        </p>
-      </div>
-
-      <div class="framing-question">
-        <h3>What does the evidence establish?</h3>
-        <p>
-          How do context, interaction, model updates, or constraints on what can
-          safely be observed affect the conclusions an evaluation can support?
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+    </section>
 
     <!-- Publications List -->
     <div style="background: #fff;">
@@ -93,6 +70,7 @@
         <div class="pub-content">
           <h3>SoftWater: Class-Aware Rate Allocation for Softmax Quantization</h3>
           <p class="pub-authors">with Joao Cavalcanti. <a href="https://arxiv.org/abs/2608.12026">arXiv</a> · <span class="pub-topic">∇ Optimization</span></p>
+          <p class="pub-description">Modern language models can be expensive to store and deploy, and standard quantization methods often leave the large softmax output layer in high precision. We formulate softmax quantization as a class-aware rate-distortion problem and develop SoftWater, which allocates precision according to how different classes affect the model’s output distribution, substantially reducing memory while preserving predictive quality.</p>
         </div>
       </div>
 
@@ -101,6 +79,7 @@
         <div class="pub-content">
           <h3>The Fast Mixing Mechanism for Differential Privacy</h3>
           <p class="pub-authors">with Omri Lev, Moshe Shenfeld, Vishwak Srinivasan, Katrina Ligett. <a href="https://arxiv.org/abs/2605.30600">arXiv</a> · <span class="pub-topic">∇ Optimization · ◆ Safety</span></p>
+          <p class="pub-description">Randomized sketching can make large optimization problems cheaper to solve while also providing privacy through its inherent randomness, but existing private sketches can remain computationally expensive. We develop a privacy mechanism based on fast randomized transforms that retains strong privacy and accuracy guarantees while enabling faster private linear regression, connecting computational efficiency and privacy within a common algorithmic primitive.</p>
         </div>
       </div>
 
@@ -109,6 +88,7 @@
         <div class="pub-content">
           <h3>Alignment has a Fantasia Problem</h3>
           <p class="pub-authors">with Nathanael Jo, Zoe De Simone, Mitchell Gordon. <a href="https://arxiv.org/pdf/2604.21827">arXiv</a> · <span class="pub-topic">✓ Evaluation</span></p>
+          <p class="pub-description">AI assistants are typically evaluated by how well they satisfy a user’s request, but users often approach complex tasks before their goals and intentions are fully formed. We argue that effective assistance should instead account for the user’s evolving cognitive process, motivating evaluations that ask not only whether a task was completed, but whether the system preserved appropriate human judgment and agency throughout the interaction.</p>
         </div>
       </div>
 
@@ -117,6 +97,7 @@
         <div class="pub-content">
           <h3>Pandora's Regret: A Proper Scoring Rule for Evaluating Sequential Search</h3>
           <p class="pub-authors">with Gerardo Flores, Yash Deshpande, Jannis R. Brea. <a href="https://arxiv.org/pdf/2605.01936">arXiv</a> · <span class="pub-topic">✓ Evaluation</span></p>
+          <p class="pub-description">Standard classification metrics evaluate predictions independently, even when predictions are used to determine the order in which alternatives are searched or tested. We develop Pandora’s Regret, a proper scoring rule derived from the downstream cost of sequential search, aligning model evaluation with the decisions that predictions ultimately support.</p>
         </div>
       </div>
 
@@ -145,6 +126,7 @@
         <div class="pub-content">
           <h3>Accelerated Convex Optimization via Hamiltonian Dynamics with Deterministic Integration Time</h3>
           <p class="pub-authors">with Xiuyuan Wang, Vishwak Srinivasan, Qiang Fu, Siddharth Mitra, Andre Wibisono. <a href="https://arxiv.org/pdf/2606.17260">arXiv</a> · <span class="pub-topic">∇ Optimization</span></p>
+          <p class="pub-description">Optimization and sampling are closely connected through the continuous-time dynamics that underlie their algorithms. We show that Hamiltonian dynamics, a central tool in modern sampling, can also serve as a primitive for deterministic accelerated optimization by exploiting contraction of averaged trajectories, yielding practical algorithms with optimal first-order complexity.</p>
         </div>
       </div>
 
@@ -153,6 +135,7 @@
         <div class="pub-content">
           <h3>A Consequentialist Critique of Binary Classification Evaluation: Theory, Practice, and Tools</h3>
           <p class="pub-authors">with Gerardo Flores, Abby Schiff, Alyssa Smith, Julia Fukuyama. <a href="https://arxiv.org/pdf/2504.04528">arXiv</a> · <span class="pub-topic">✓ Evaluation</span></p>
+          <p class="pub-description">Classification models are often compared using fixed thresholds or aggregate metrics that can be poorly matched to how their predictions will actually be used. We develop a decision-theoretic framework for choosing evaluation metrics based on the downstream consequences of prediction, showing how properties of the deployment setting determine which measures meaningfully distinguish between models.</p>
         </div>
       </div>
 
@@ -173,6 +156,7 @@
         <div class="pub-content">
           <h3>Position: AI Evaluations Should be Grounded on a Theory of Capability</h3>
           <p class="pub-authors">with Nathan Jo. <a href="https://arxiv.org/pdf/2509.19590">arXiv</a> · <span class="pub-topic">✓ Evaluation</span></p>
+          <p class="pub-description">Benchmark scores are often treated as direct measurements of what an AI system can do, but interpreting performance as evidence of capability requires assumptions about how an underlying capability produces observed behavior. We argue that evaluations should make this inferential step explicit by beginning with a theory of capability and developing methods that quantify uncertainty about the capability being measured.</p>
         </div>
       </div>
 
@@ -209,6 +193,7 @@
         <div class="pub-content">
           <h3>Aligning Evaluation with Clinical Priorities: Calibration, Label Shift, and Error Costs</h3>
           <p class="pub-authors">with Gerardo Flores, Alyssa Smith, Julia Fukuyama. <a href="https://arxiv.org/pdf/2506.14540">arXiv</a> · <span class="pub-topic">✓ Evaluation</span></p>
+          <p class="pub-description">Clinical prediction systems operate under changing disease prevalence and asymmetric costs of different errors, yet common metrics such as accuracy and AUC can ignore these deployment realities. We develop a decision-theoretic evaluation framework that incorporates calibration, label shift, and clinically meaningful error costs, enabling model comparisons that better reflect the conditions and priorities of real clinical use.</p>
         </div>
       </div>
 
@@ -217,6 +202,7 @@
         <div class="pub-content">
           <h3>The Gaussian Mixing Mechanism: Renyi Differential Privacy via Gaussian Sketches</h3>
           <p class="pub-authors">with Omri Lev, Vishwak Srinivasan, Moshe Shenfeld, Katrina Ligett, Ayush Sekhari. <a href="https://arxiv.org/pdf/2505.24603">arXiv</a> · <span class="pub-topic">◆ Safety · ∇ Optimization</span></p>
+          <p class="pub-description">Randomization used to make optimization more computationally efficient can also provide formal privacy guarantees. We develop a sharper privacy analysis of Gaussian sketching and show how the same randomized compression operation can simultaneously support efficient computation and differential privacy, leading to improved accuracy for private linear regression and, in some settings, reduced runtime.</p>
         </div>
       </div>
 
@@ -233,6 +219,7 @@
         <div class="pub-content">
           <h3>Adaptive Backtracking Line Search</h3>
           <p class="pub-authors">with Laurent Lessard, Joao Cavalcanti. <a href="https://arxiv.org/pdf/2408.13150">arXiv</a> · <span class="pub-topic">∇ Optimization</span></p>
+          <p class="pub-description">The performance of optimization algorithms often depends critically on choosing appropriate step sizes, yet standard backtracking adjusts them using a fixed rule that ignores how badly a candidate step fails. We develop an adaptive line search that uses the magnitude of this violation to choose better steps, improving practical optimization speed without sacrificing the convergence guarantees of classical methods.</p>
         </div>
       </div>
 
@@ -241,6 +228,7 @@
         <div class="pub-content">
           <h3>High-accuracy sampling from constrained spaces with the Metropolis-adjusted Preconditioned Langevin Algorithm</h3>
           <p class="pub-authors">with Vishwak Srinivasan, Andre Wibisono. <a href="https://arxiv.org/pdf/2412.18701">arXiv</a> · <span class="pub-topic">∇ Optimization</span></p>
+          <p class="pub-description">Many inference problems require sampling from high-dimensional distributions subject to complex constraints, where standard Euclidean sampling methods can be inefficient. We develop a geometry-aware Langevin sampler inspired by preconditioned and natural-gradient optimization, showing how optimization geometry can be transferred to sampling to obtain high-accuracy guarantees for distributions supported on constrained spaces.</p>
         </div>
       </div>
 
@@ -249,6 +237,7 @@
         <div class="pub-content">
           <h3>Allocation Multiplicity: Evaluating the Promises of the Rashomon Set</h3>
           <p class="pub-authors">with Shomik Jain, Margaret Wang, Kathleen Creel. <a href="https://arxiv.org/pdf/2503.16621v1">arXiv</a> · <span class="pub-topic">◆ Safety · ✓ Evaluation</span></p>
+          <p class="pub-description">When many models perform equally well, model multiplicity is often taken to imply greater flexibility, fairness, or diversity in downstream decisions. We show that multiplicity in predictive models need not translate into multiplicity in the allocations that ultimately matter, motivating evaluation at the level of downstream opportunities rather than model predictions alone.</p>
         </div>
       </div>
 
@@ -277,6 +266,7 @@
         <div class="pub-content">
           <h3>Unstable Unlearning: The Hidden Risk of Concept Resurgence in Diffusion Models</h3>
           <p class="pub-authors">with Vinith Suriyakumar, Rohan Alur, Ayush Sekhari, Manish Raghavan. <a href="https://arxiv.org/pdf/2410.08074">arXiv</a> · <span class="pub-topic">◆ Safety · ✓ Evaluation</span></p>
+          <p class="pub-description">Machine unlearning methods are typically evaluated immediately after a concept has been removed, implicitly treating successful forgetting as a static property of the model. We show that subsequent benign fine-tuning can cause supposedly unlearned concepts to reappear, revealing that evaluations of unlearning must test whether safety interventions remain effective under realistic sequences of model updates.</p>
         </div>
       </div>
 
@@ -323,6 +313,9 @@
           const show = filter === 'all' || tags.includes(filter);
           pub.style.display = show ? 'grid' : 'none';
         });
+
+        const evaluationIntro = document.getElementById('evaluation-intro');
+        evaluationIntro.classList.toggle('is-visible', filter === 'evaluation');
       });
     });
 
