@@ -626,6 +626,51 @@ html {
   border-color: rgba(26, 23, 19, 0.4);
 }
 
+.evaluation-intro {
+  display: none;
+  background: #fff;
+}
+
+.evaluation-intro.is-visible {
+  display: block;
+}
+
+.evaluation-intro-inner {
+  max-width: 888px;
+  margin: 0 auto;
+  padding: 30px 0 26px;
+  border-bottom: 1px solid rgba(26, 23, 19, 0.1);
+}
+
+.evaluation-intro h2 {
+  margin: 0;
+  font: 500 21px/1.35 'Newsreader', serif;
+  color: #1a1713;
+}
+
+.evaluation-intro-statement {
+  max-width: 70ch;
+  margin: 8px 0 0;
+  font: 400 14px/1.65 'Libre Franklin', sans-serif;
+  color: rgba(26, 23, 19, 0.72);
+}
+
+.evaluation-questions {
+  max-width: 76ch;
+  margin-top: 17px;
+}
+
+.evaluation-questions p {
+  margin: 7px 0 0;
+  font: 400 13px/1.55 'Libre Franklin', sans-serif;
+  color: rgba(26, 23, 19, 0.6);
+}
+
+.evaluation-questions strong {
+  font-weight: 600;
+  color: #26221d;
+}
+
 .publications-list {
   padding: 8px 56px 34px;
   max-width: 1000px;
@@ -860,6 +905,11 @@ body.menu-open {
 
   .menu-backdrop {
     display: block;
+  }
+
+  .evaluation-intro-inner {
+    margin: 0 24px;
+    padding: 24px 0 22px;
   }
 
   .hero-dark {
