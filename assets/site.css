@@ -397,6 +397,22 @@ html {
   max-width: 66ch;
 }
 
+.topic-questions {
+  margin-top: 18px;
+  max-width: 66ch;
+}
+
+.topic-content .topic-questions p {
+  margin: 9px 0 0;
+  font: 400 13.5px/1.62 'Libre Franklin', sans-serif;
+  color: rgba(26, 23, 19, 0.68);
+}
+
+.topic-questions strong {
+  font-weight: 600;
+  color: #26221d;
+}
+
 .topic-link {
   margin: 14px 0 0;
   font: 500 14px/1 'Libre Franklin', sans-serif;
@@ -684,59 +700,6 @@ html {
   max-width: 66ch;
 }
 
-/* Publication-area framing */
-.publication-framing {
-  display: none;
-  background: #fff;
-}
-
-.publication-framing-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 30px 56px 34px;
-  border-bottom: 1px solid rgba(26, 23, 19, 0.12);
-}
-
-.framing-kicker {
-  margin: 0 0 10px;
-  font: 600 12px/1.4 'Libre Franklin', sans-serif;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: oklch(0.45 0.13 70);
-}
-
-.framing-statement {
-  margin: 0;
-  max-width: 66ch;
-  font: 400 15.5px/1.65 'Libre Franklin', sans-serif;
-  color: #26221d;
-}
-
-.framing-questions {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-top: 28px;
-}
-
-.framing-question {
-  padding-top: 14px;
-  border-top: 1px solid rgba(26, 23, 19, 0.12);
-}
-
-.framing-question h3 {
-  margin: 0 0 8px;
-  font: 500 17px/1.35 'Newsreader', serif;
-  color: #1a1713;
-}
-
-.framing-question p {
-  margin: 0;
-  font: 400 13.5px/1.6 'Libre Franklin', sans-serif;
-  color: rgba(26, 23, 19, 0.65);
-}
-
-
 /* Talks Page Styles */
 .talks-section {
   display: grid;
@@ -988,17 +951,6 @@ body.menu-open {
 
   .publications-list {
     padding: 16px 24px 24px;
-  }
-
-
-  .publication-framing-inner {
-    padding: 24px 24px 28px;
-  }
-
-  .framing-questions {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    margin-top: 24px;
   }
 }
 
