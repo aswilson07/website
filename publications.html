@@ -46,19 +46,9 @@
     </div>
 
     <!-- Shown only when the Evaluation filter is active -->
-    <section class="evaluation-intro" id="evaluation-intro" aria-labelledby="evaluation-intro-title">
+    <section class="evaluation-intro" id="evaluation-intro" aria-label="Evaluation research overview" hidden>
       <div class="evaluation-intro-inner">
-        <h2 id="evaluation-intro-title">Evaluation is an inference problem.</h2>
-        <p class="evaluation-intro-statement">
-          We study how to define what should be measured, determine what outcomes matter,
-          and understand what conclusions observations can support about the capabilities,
-          behaviors, and harms of AI systems.
-        </p>
-        <div class="evaluation-questions">
-          <p><strong>What are we trying to measure?</strong> Defining and operationalizing latent constructs such as capability, sycophancy, and successful assistance.</p>
-          <p><strong>What outcomes actually matter?</strong> Connecting evaluation to downstream decisions, consequences, and deployment priorities.</p>
-          <p><strong>What does the evidence establish?</strong> Understanding how context, interaction, model updates, and observation constraints shape the claims an evaluation can support.</p>
-        </div>
+        <p>We study evaluation as an inference problem: how to define the construct of interest, choose metrics that reflect downstream consequences, and determine what claims the resulting evidence can support about AI systems.</p>
       </div>
     </section>
 
@@ -315,7 +305,7 @@
         });
 
         const evaluationIntro = document.getElementById('evaluation-intro');
-        evaluationIntro.classList.toggle('is-visible', filter === 'evaluation');
+        evaluationIntro.hidden = filter !== 'evaluation';
       });
     });
 
