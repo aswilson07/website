@@ -10,12 +10,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
 </head>
+
 <body>
   <div class="page-wrapper">
+
     <!-- Page Hero -->
     <header class="page-hero">
       <nav class="top-nav">
         <div class="site-title">Ashia C. Wilson</div>
+
         <div class="nav-links">
           <a href="index.html" class="nav-link">Home</a>
           <a href="bio.html" class="nav-link">Bio</a>
@@ -26,53 +29,185 @@
           <a href="new_students.html" class="nav-link">Prospective Students</a>
         </div>
       </nav>
+
       <div class="page-hero-content">
         <h1>Research</h1>
-        <p class="research-description">Dr. Ashia Wilson directs the <strong>Optimization, Safety, and Evaluation (OSE) Lab</strong>.</p>
-        <p class="research-intro">Our research develops the foundations needed to build machine learning systems that are efficient, safe, and meaningfully evaluated. We study how mathematical structure can be used to design better optimization and sampling algorithms, how AI systems can affect human knowledge, judgment, and agency, and how evaluation can support valid conclusions about their capabilities, limitations, and societal consequences.</p>
+
+        <p class="research-description">
+          Dr. Ashia Wilson directs the
+          <strong>Optimization, Safety, and Evaluation (OSE) Lab</strong>.
+        </p>
+
+        <p class="research-intro">
+          Our research develops the foundations needed to build machine learning
+          systems that are efficient, safe, and meaningfully evaluated. We study
+          how mathematical structure can be used to design better optimization
+          and sampling algorithms, how AI systems can affect human knowledge,
+          judgment, and agency, and how evaluation can support valid conclusions
+          about their capabilities, limitations, and societal consequences.
+        </p>
       </div>
     </header>
 
+
     <!-- Main Content -->
     <main class="page-content-new">
+
+      <!-- Optimization -->
       <div class="topic-section">
         <div class="topic-icon-wrapper">
           <div class="topic-symbol">∇</div>
           <h2 class="topic-title">Optimization</h2>
         </div>
+
         <div class="topic-content">
-          <p>We develop the algorithmic foundations of optimization, sampling, and learning. A central theme of our work is that these areas are deeply connected, and that insights from one can lead to more efficient methods in another. We also study optimization under constraints imposed by modern machine learning systems, including privacy requirements, limited communication or compute, and reduced numerical precision. Across these directions, our goal is to identify the principles that make optimization and sampling algorithms efficient, adaptive, while developing methods that reduce the computational and resource demands of modern machine learning, making powerful models easier to train and deploy.</p>
-          <p class="topic-link"><a href="publications.html?filter=optimization">See related publications →</a></p>
+          <p>
+            We develop the algorithmic foundations of optimization, sampling,
+            and learning. A central theme of our work is that these areas are
+            deeply connected: geometric and dynamical ideas developed for one
+            problem can often reveal new algorithms for another. We also study
+            how optimization changes under the constraints of modern machine
+            learning systems, including privacy requirements, limited
+            computation and communication, and reduced numerical precision.
+            Across these directions, we seek structural principles that make
+            learning algorithms more efficient and adaptive.
+          </p>
+
+          <div class="topic-questions">
+            <p>
+              <strong>Geometry and dynamics.</strong>
+              What common principles connect optimization and sampling?
+            </p>
+
+            <p>
+              <strong>Adaptivity.</strong>
+              How can algorithms exploit information revealed during computation
+              rather than relying on conservative parameters chosen in advance?
+            </p>
+
+            <p>
+              <strong>Efficiency under constraints.</strong>
+              How can structure, randomization, and compression reduce the
+              statistical and computational costs imposed by privacy, precision,
+              and limited resources?
+            </p>
+          </div>
+
+          <p class="topic-link">
+            <a href="publications.html?filter=optimization">
+              See related publications →
+            </a>
+          </p>
         </div>
       </div>
 
+
+      <!-- Safety -->
       <div class="topic-section">
         <div class="topic-icon-wrapper">
           <div class="topic-symbol">◆</div>
           <h2 class="topic-title">Safety</h2>
         </div>
+
         <div class="topic-content">
-          <p>We develop methods and foundations for understanding and mitigating harms from AI systems. One thrust focuses on child safety and image-based abuse, including methods for detecting and auditing models that have been adapted for harmful purposes without requiring evaluators to generate or inspect illegal or abusive content. A second thrust studies epistemic harms, which arise when AI systems distort what people know, believe, imagine, or regard as possible. This includes homogenization, where the widespread adoption of AI reduce diversity across creative, informational, and institutional outcomes, and sycophancy, where systems prioritize agreement or affirmation over truthfulness, critical reflection, and user agency.</p>
-          <p class="topic-link"><a href="publications.html?filter=safety">See related publications →</a></p>
+          <p>
+            We develop methods and foundations for understanding and mitigating
+            harms from AI systems. One thrust focuses on child safety and
+            image-based abuse, including methods for detecting and auditing
+            models adapted for harmful purposes without requiring evaluators to
+            generate or inspect illegal or abusive content. A second thrust
+            studies epistemic harms: ways in which AI systems can distort what
+            people know, believe, imagine, or regard as possible. This includes
+            homogenization, where widespread AI adoption can reduce diversity
+            across creative, informational, and institutional outcomes, and
+            sycophancy, where systems prioritize agreement or affirmation over
+            truthfulness, critical reflection, and user agency.
+          </p>
+
+          <div class="topic-questions">
+            <p>
+              <strong>How can harmful capabilities be detected safely?</strong>
+              We study methods for auditing dangerous model adaptations without
+              requiring harmful behavior to be generated.
+            </p>
+
+            <p>
+              <strong>How do AI systems shape human judgment?</strong>
+              We study behaviors such as sycophancy that can influence users'
+              beliefs, decisions, and autonomy.
+            </p>
+
+            <p>
+              <strong>How does widespread AI use reshape what is available to us?</strong>
+              We study homogenization and related structural effects on diversity,
+              creativity, and opportunity.
+            </p>
+          </div>
+
+          <p class="topic-link">
+            <a href="publications.html?filter=safety">
+              See related publications →
+            </a>
+          </p>
         </div>
       </div>
 
+
+      <!-- Evaluation -->
       <div class="topic-section">
         <div class="topic-icon-wrapper">
           <div class="topic-symbol">✓</div>
           <h2 class="topic-title">Evaluation</h2>
         </div>
+
         <div class="topic-content">
-          <p>Evaluations drive decisions about which AI systems are trusted, improved, and deployed. We develop methods and foundations for evaluation that better characterize system capabilities, limitations, and societal impacts. Our work asks how evaluations can support valid conclusions, reflect the contexts and consequences in which systems are used, and reveal meaningful differences that standard benchmarks and aggregate metrics may obscure. Across these directions, our goal is to design evaluations that are rigorous, decision-relevant, and aligned with what ultimately matters in practice.</p>
-          <p class="topic-link"><a href="publications.html?filter=evaluation">See related publications →</a></p>
+          <p>
+            Evaluation is an inference problem. We study how to define what
+            should be measured, determine what outcomes matter, and understand
+            what conclusions observations can support about the capabilities,
+            behaviors, and harms of AI systems. Our goal is to develop an
+            evaluation science in which benchmarks and metrics are not treated
+            as ends in themselves, but as evidence used to support claims about
+            systems and their consequences.
+          </p>
+
+          <div class="topic-questions">
+            <p>
+              <strong>What are we trying to measure?</strong>
+              How should latent constructs such as capability, sycophancy, or
+              successful assistance be defined and operationalized?
+            </p>
+
+            <p>
+              <strong>What outcomes actually matter?</strong>
+              How should evaluation reflect downstream decisions, consequences,
+              and the priorities of the deployment setting?
+            </p>
+
+            <p>
+              <strong>What does the evidence establish?</strong>
+              How do context, interaction, model updates, and constraints on what
+              can safely be observed affect the conclusions an evaluation can
+              support?
+            </p>
+          </div>
+
+          <p class="topic-link">
+            <a href="publications.html?filter=evaluation">
+              See related publications →
+            </a>
+          </p>
         </div>
       </div>
+
     </main>
+
 
     <!-- Footer -->
     <footer class="footer-new">
       © 2026 Ashia C. Wilson
     </footer>
+
   </div>
 
   <script src="assets/site.js"></script>
