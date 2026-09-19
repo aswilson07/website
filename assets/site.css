@@ -626,49 +626,92 @@ html {
   border-color: rgba(26, 23, 19, 0.4);
 }
 
+/* Evaluation intro â€” shown only under the Evaluation filter */
 .evaluation-intro {
   display: none;
   background: #fff;
 }
 
-.evaluation-intro.is-visible {
+.evaluation-intro:not([hidden]) {
   display: block;
 }
 
 .evaluation-intro-inner {
-  max-width: 888px;
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 40px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 30px 0 26px;
+  padding: 30px 56px 28px;
   border-bottom: 1px solid rgba(26, 23, 19, 0.1);
 }
 
-.evaluation-intro h2 {
+.evaluation-intro-label {
+  font: 600 12px/1.4 'Libre Franklin', sans-serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: oklch(0.45 0.13 70);
+}
+
+.evaluation-intro p {
   margin: 0;
-  font: 500 21px/1.35 'Newsreader', serif;
-  color: #1a1713;
-}
-
-.evaluation-intro-statement {
-  max-width: 70ch;
-  margin: 8px 0 0;
-  font: 400 14px/1.65 'Libre Franklin', sans-serif;
-  color: rgba(26, 23, 19, 0.72);
-}
-
-.evaluation-questions {
-  max-width: 76ch;
-  margin-top: 17px;
-}
-
-.evaluation-questions p {
-  margin: 7px 0 0;
-  font: 400 13px/1.55 'Libre Franklin', sans-serif;
-  color: rgba(26, 23, 19, 0.6);
-}
-
-.evaluation-questions strong {
-  font-weight: 600;
+  max-width: 68ch;
+  font: 400 15px/1.65 'Libre Franklin', sans-serif;
   color: #26221d;
+}
+
+/* Thematic group headers (Evaluation filter only) */
+.pub-group-head {
+  display: none;
+  padding: 40px 0 18px;
+  border-top: 1px solid rgba(26, 23, 19, 0.1);
+}
+
+body[data-filter='evaluation'] .pub-group-head {
+  display: block;
+}
+
+body[data-filter='evaluation'] .pub-group:first-of-type .pub-group-head {
+  border-top: none;
+  padding-top: 34px;
+}
+
+.pub-group-question {
+  margin: 0;
+  max-width: 24ch;
+  font: 400 27px/1.25 'Newsreader', serif;
+  letter-spacing: -0.01em;
+  color: #1a1713;
+  text-wrap: pretty;
+}
+
+.pub-group-sub {
+  margin: 7px 0 0;
+  max-width: 60ch;
+  font: 400 13.5px/1.6 'Libre Franklin', sans-serif;
+  color: rgba(26, 23, 19, 0.58);
+}
+
+/* Rows inside a group: the group header owns the rule above it */
+.pub-group .publication {
+  border-bottom: none;
+  border-top: 1px solid rgba(26, 23, 19, 0.1);
+}
+
+.publications-list > .pub-group:last-of-type .publication:last-child {
+  border-bottom: none;
+}
+
+/* Venue doubles as the paper link inside groups */
+.pub-group .pub-meta a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(139, 105, 20, 0.4);
+}
+
+.pub-group .pub-meta a:hover {
+  color: oklch(0.45 0.13 70);
+  border-bottom-color: rgba(139, 105, 20, 0.7);
 }
 
 .publications-list {
@@ -908,8 +951,18 @@ body.menu-open {
   }
 
   .evaluation-intro-inner {
-    margin: 0 24px;
-    padding: 24px 0 22px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 24px 24px 22px;
+  }
+
+  body[data-filter='evaluation'] .pub-group-head {
+    padding: 30px 0 14px;
+  }
+
+  .pub-group-question {
+    font-size: 23px;
+    max-width: none;
   }
 
   .hero-dark {
