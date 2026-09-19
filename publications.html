@@ -47,9 +47,25 @@
 
     <!-- Shown only when the Evaluation filter is active -->
     <section class="evaluation-intro" id="evaluation-intro" aria-label="Evaluation research overview" hidden>
-      <div class="evaluation-intro-inner">
-        <div class="evaluation-intro-label">Evaluation</div>
+      <div class="topic-intro-inner">
+        <div class="topic-intro-label">Evaluation</div>
         <p>Evaluation is an inference and decision problem. We develop statistical and decision-theoretic theory, metrics, scoring rules, and evaluation protocols for turning latent constructs into valid measurements, determining what observed behavior supports about system capabilities, behaviors, and harms, and aligning evaluation with the decisions and societal consequences that ultimately matter.</p>
+      </div>
+    </section>
+
+    <!-- Shown only when the Optimization filter is active -->
+    <section class="optimization-intro" id="optimization-intro" aria-label="Optimization research overview" hidden>
+      <div class="topic-intro-inner">
+        <div class="topic-intro-label">Optimization</div>
+        <p>Optimization and sampling are computational foundations of modern AI, science, and engineering. They govern how models are trained, how uncertainty is represented, and how large-scale inference problems are solved. We develop mathematical principles for making these computations more efficient and for preserving utility when learning systems must satisfy human-centered requirements, from protecting sensitive information to reducing the resources required to store and deploy models.</p>
+      </div>
+    </section>
+
+    <!-- Shown only when the Safety filter is active -->
+    <section class="safety-intro" id="safety-intro" aria-label="Safety research overview" hidden>
+      <div class="topic-intro-inner">
+        <div class="topic-intro-label">Safety</div>
+        <p>AI safety asks how to ensure that AI systems support rather than undermine the conditions for individual and collective human flourishing. We develop technical methods for detecting and controlling harmful model behavior, together with mathematical, empirical, and normative frameworks for understanding how AI systems shape human agency, epistemic diversity, and access to opportunity.</p>
       </div>
     </section>
 
@@ -58,7 +74,7 @@
       <div class="publications-list">
 
         <!-- ============ EVALUATION GROUP 1 ============ -->
-        <div class="pub-group">
+        <div class="pub-group pub-group-evaluation pub-group-lead">
           <div class="pub-group-head">
             <h2 class="pub-group-question">What are we trying to measure?</h2>
             <p class="pub-group-sub">Constructs and valid operationalizations.</p>
@@ -68,10 +84,10 @@
             <div class="pub-meta"><span class="pub-venue-plain">ICML 2026</span><a class="pub-venue-link" href="https://arxiv.org/pdf/2509.19590" target="_blank" rel="noopener noreferrer">ICML 2026</a></div>
             <div class="pub-content">
               <h3>Position: AI Evaluations Should be Grounded on a Theory of Capability</h3>
-              <p class="pub-authors pub-authors-default">with Nathan Jo. <a href="https://arxiv.org/pdf/2509.19590">arXiv</a> &middot; <span class="pub-topic">&#10003; Evaluation</span></p>
-              <p class="pub-authors pub-authors-eval">with Nathan Jo</p>
-              <p class="pub-description pub-description-default">Benchmark scores are often treated as direct measurements of what an AI system can do, but interpreting performance as evidence of capability requires assumptions about how an underlying capability produces observed behavior. We argue that evaluations should make this inferential step explicit by beginning with a theory of capability and developing methods that quantify uncertainty about the capability being measured.</p>
-              <p class="pub-description pub-description-eval">Benchmark scores are often treated as direct measurements of what an AI system can do, but interpreting performance as evidence of capability requires assumptions about how a latent capability produces observed behavior. We argue that evaluations should make this inferential step explicit by beginning with a theory of capability and developing methods that quantify uncertainty about the capability being measured.</p>
+              <p class="pub-authors pub-authors-flat">with Nathan Jo. <a href="https://arxiv.org/pdf/2509.19590">arXiv</a> &middot; <span class="pub-topic">&#10003; Evaluation</span></p>
+              <p class="pub-authors pub-authors-grouped">with Nathan Jo</p>
+              <p class="pub-description pub-description-flat">Benchmark scores are often treated as direct measurements of what an AI system can do, but interpreting performance as evidence of capability requires assumptions about how an underlying capability produces observed behavior. We argue that evaluations should make this inferential step explicit by beginning with a theory of capability and developing methods that quantify uncertainty about the capability being measured.</p>
+              <p class="pub-description pub-description-grouped">Benchmark scores are often treated as direct measurements of what an AI system can do, but interpreting performance as evidence of capability requires assumptions about how a latent capability produces observed behavior. We argue that evaluations should make this inferential step explicit by beginning with a theory of capability and developing methods that quantify uncertainty about the capability being measured.</p>
             </div>
           </div>
 
@@ -79,16 +95,16 @@
             <div class="pub-meta"><span class="pub-venue-plain">ICLR HCAIR WORKSHOP</span><a class="pub-venue-link" href="https://arxiv.org/pdf/2604.21827" target="_blank" rel="noopener noreferrer">ICLR HCAIR WORKSHOP</a></div>
             <div class="pub-content">
               <h3>Position: Alignment has a Fantasia Problem</h3>
-              <p class="pub-authors pub-authors-default">with Nathanael Jo, Zoe De Simone, Mitchell Gordon. <a href="https://arxiv.org/pdf/2604.21827">arXiv</a> &middot; <span class="pub-topic">&#10003; Evaluation</span></p>
-              <p class="pub-authors pub-authors-eval">with Nathanael Jo, Zoe De Simone, Mitchell Gordon</p>
-              <p class="pub-description pub-description-default">AI assistants are typically evaluated by how well they satisfy a user&rsquo;s request, but users often approach complex tasks before their goals and intentions are fully formed. We argue that effective assistance should instead account for the user&rsquo;s evolving cognitive process, motivating evaluations that ask not only whether a task was completed, but whether the system preserved appropriate human judgment and agency throughout the interaction.</p>
-              <p class="pub-description pub-description-eval">AI assistants are typically evaluated by whether they satisfy a user&rsquo;s request, but this operationalization assumes that users enter complex tasks with fixed and fully formed goals. We argue that successful assistance should instead be defined in relation to the user&rsquo;s evolving cognitive process, including whether the system preserves appropriate human judgment and agency.</p>
+              <p class="pub-authors pub-authors-flat">with Nathanael Jo, Zoe De Simone, Mitchell Gordon. <a href="https://arxiv.org/pdf/2604.21827">arXiv</a> &middot; <span class="pub-topic">&#10003; Evaluation</span></p>
+              <p class="pub-authors pub-authors-grouped">with Nathanael Jo, Zoe De Simone, Mitchell Gordon</p>
+              <p class="pub-description pub-description-flat">AI assistants are typically evaluated by how well they satisfy a user&rsquo;s request, but users often approach complex tasks before their goals and intentions are fully formed. We argue that effective assistance should instead account for the user&rsquo;s evolving cognitive process, motivating evaluations that ask not only whether a task was completed, but whether the system preserved appropriate human judgment and agency throughout the interaction.</p>
+              <p class="pub-description pub-description-grouped">AI assistants are typically evaluated by whether they satisfy a user&rsquo;s request, but this operationalization assumes that users enter complex tasks with fixed and fully formed goals. We argue that successful assistance should instead be defined in relation to the user&rsquo;s evolving cognitive process, including whether the system preserves appropriate human judgment and agency.</p>
             </div>
           </div>
         </div>
 
         <!-- ============ EVALUATION GROUP 2 ============ -->
-        <div class="pub-group">
+        <div class="pub-group pub-group-evaluation">
           <div class="pub-group-head">
             <h2 class="pub-group-question">What does the evidence establish?</h2>
             <p class="pub-group-sub">Context dependence, robustness, and the limits of inference.</p>
@@ -101,10 +117,10 @@
             </div>
             <div class="pub-content">
               <h3>Evaluation without Generation<span class="pub-title-rest">: Non-Generative Assessment of Harmful Model Specialization with Applications to CSAM</span></h3>
-              <p class="pub-authors pub-authors-default">with Vinith Suriyakumar, Ayush Sekhari, Lena Stempfle, Robertson Wang, Michael Simpson, Rebecca Portnoff, Marzyeh Ghassemi. <a href="https://arxiv.org/abs/2604.25119">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety &middot; &#10003; Evaluation</span></p>
-              <p class="pub-authors pub-authors-eval">with Vinith Suriyakumar, Ayush Sekhari, Lena Stempfle, Robertson Wang, Michael Simpson, Rebecca Portnoff, Marzyeh Ghassemi</p>
-              <p class="pub-description pub-description-default">Some harmful model capabilities are difficult or unsafe to evaluate by generating outputs, especially when producing the content itself is legally or ethically constrained, as with child sexual abuse material (CSAM). We develop methods for detecting harmful model specialization from a model's internal representations, enabling evaluation without generation.</p>
-              <p class="pub-description pub-description-eval">Some harmful model capabilities cannot be safely or lawfully evaluated by generating outputs, making the usual behavioral evidence unavailable. We develop Evaluation without Generation, the first machine-learning screening method evaluated on CSAM-specialized LoRAs found in the wild, detecting harmful model specialization without generating or inspecting CSAM.</p>
+              <p class="pub-authors pub-authors-flat">with Vinith Suriyakumar, Ayush Sekhari, Lena Stempfle, Robertson Wang, Michael Simpson, Rebecca Portnoff, Marzyeh Ghassemi. <a href="https://arxiv.org/abs/2604.25119">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety &middot; &#10003; Evaluation</span></p>
+              <p class="pub-authors pub-authors-grouped">with Vinith Suriyakumar, Ayush Sekhari, Lena Stempfle, Robertson Wang, Michael Simpson, Rebecca Portnoff, Marzyeh Ghassemi</p>
+              <p class="pub-description pub-description-flat">Some harmful model capabilities are difficult or unsafe to evaluate by generating outputs, especially when producing the content itself is legally or ethically constrained, as with child sexual abuse material (CSAM). We develop methods for detecting harmful model specialization from a model's internal representations, enabling evaluation without generation.</p>
+              <p class="pub-description pub-description-grouped">Some harmful model capabilities cannot be safely or lawfully evaluated by generating outputs, making the usual behavioral evidence unavailable. We develop Evaluation without Generation, the first machine-learning screening method evaluated on CSAM-specialized LoRAs found in the wild, detecting harmful model specialization without generating or inspecting CSAM.</p>
             </div>
           </div>
 
@@ -115,10 +131,10 @@
             </div>
             <div class="pub-content">
               <h3>Interaction Context Often Increases Sycophancy in LLMs</h3>
-              <p class="pub-authors pub-authors-default">with Shomik Jain, Charlotte Park, Matheus Vianna, Dana Calacci. <a href="https://arxiv.org/pdf/2509.12517">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety &middot; &#10003; Evaluation</span></p>
-              <p class="pub-authors pub-authors-eval">with Shomik Jain, Charlotte Park, Matheus Vianna, Dana Calacci</p>
-              <p class="pub-description pub-description-default">AI systems increasingly personalize their responses using information about users and their prior interactions, but this context can also amplify problematic forms of agreement and mirroring. We show that interaction context often increases sycophancy, highlighting how context-free evaluations can underestimate behaviors that raise concerns about user autonomy and psychological harm in real-world interactions.</p>
-              <p class="pub-description pub-description-eval">Context-free evaluations treat behavior observed on isolated prompts as evidence of how a system will behave during interaction, but information about the user and prior exchanges can change the behavior being measured. We show that interaction context often increases sycophancy, demonstrating that context-free protocols can systematically understate risks to truthfulness and user autonomy.</p>
+              <p class="pub-authors pub-authors-flat">with Shomik Jain, Charlotte Park, Matheus Vianna, Dana Calacci. <a href="https://arxiv.org/pdf/2509.12517">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety &middot; &#10003; Evaluation</span></p>
+              <p class="pub-authors pub-authors-grouped">with Shomik Jain, Charlotte Park, Matheus Vianna, Dana Calacci</p>
+              <p class="pub-description pub-description-flat">AI systems increasingly personalize their responses using information about users and their prior interactions, but this context can also amplify problematic forms of agreement and mirroring. We show that interaction context often increases sycophancy, highlighting how context-free evaluations can underestimate behaviors that raise concerns about user autonomy and psychological harm in real-world interactions.</p>
+              <p class="pub-description pub-description-grouped">Context-free evaluations treat behavior observed on isolated prompts as evidence of how a system will behave during interaction, but information about the user and prior exchanges can change the behavior being measured. We show that interaction context often increases sycophancy, demonstrating that context-free protocols can systematically understate risks to truthfulness and user autonomy.</p>
             </div>
           </div>
 
@@ -126,16 +142,16 @@
             <div class="pub-meta"><span class="pub-venue-plain">TMLR 2026</span><a class="pub-venue-link" href="https://arxiv.org/pdf/2410.08074" target="_blank" rel="noopener noreferrer">TMLR 2026</a></div>
             <div class="pub-content">
               <h3>Unstable Unlearning<span class="pub-title-rest">: The Hidden Risk of Concept Resurgence in Diffusion Models</span></h3>
-              <p class="pub-authors pub-authors-default">with Vinith Suriyakumar, Rohan Alur, Ayush Sekhari, Manish Raghavan. <a href="https://arxiv.org/pdf/2410.08074">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety &middot; &#10003; Evaluation</span></p>
-              <p class="pub-authors pub-authors-eval">with Vinith Suriyakumar, Rohan Alur, Ayush Sekhari, Manish Raghavan</p>
-              <p class="pub-description pub-description-default">Machine unlearning methods are typically evaluated immediately after a concept has been removed, implicitly treating successful forgetting as a static property of the model. We show that subsequent benign fine-tuning can cause supposedly unlearned concepts to reappear, revealing that evaluations of unlearning must test whether safety interventions remain effective under realistic sequences of model updates.</p>
-              <p class="pub-description pub-description-eval">Unlearning is commonly evaluated immediately after an intervention, implicitly treating successful suppression as evidence of durable forgetting. We show that subsequent benign fine-tuning can cause unlearned concepts to reappear for diffusion models, demonstrating that evaluations must test whether safety properties persist through realistic sequences of model updates.</p>
+              <p class="pub-authors pub-authors-flat">with Vinith Suriyakumar, Rohan Alur, Ayush Sekhari, Manish Raghavan. <a href="https://arxiv.org/pdf/2410.08074">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety &middot; &#10003; Evaluation</span></p>
+              <p class="pub-authors pub-authors-grouped">with Vinith Suriyakumar, Rohan Alur, Ayush Sekhari, Manish Raghavan</p>
+              <p class="pub-description pub-description-flat">Machine unlearning methods are typically evaluated immediately after a concept has been removed, implicitly treating successful forgetting as a static property of the model. We show that subsequent benign fine-tuning can cause supposedly unlearned concepts to reappear, revealing that evaluations of unlearning must test whether safety interventions remain effective under realistic sequences of model updates.</p>
+              <p class="pub-description pub-description-grouped">Unlearning is commonly evaluated immediately after an intervention, implicitly treating successful suppression as evidence of durable forgetting. We show that subsequent benign fine-tuning can cause unlearned concepts to reappear for diffusion models, demonstrating that evaluations must test whether safety properties persist through realistic sequences of model updates.</p>
             </div>
           </div>
         </div>
 
         <!-- ============ EVALUATION GROUP 3 ============ -->
-        <div class="pub-group">
+        <div class="pub-group pub-group-evaluation">
           <div class="pub-group-head">
             <h2 class="pub-group-question">What outcomes actually matter?</h2>
             <p class="pub-group-sub">Decision-relevant metrics and downstream consequences.</p>
@@ -145,10 +161,10 @@
             <div class="pub-meta"><span class="pub-venue-plain">AISTATS 2026</span><a class="pub-venue-link" href="https://arxiv.org/pdf/2504.04528" target="_blank" rel="noopener noreferrer">AISTATS 2026</a></div>
             <div class="pub-content">
               <h3>A Consequentialist Critique of Binary Classification Evaluation<span class="pub-title-rest">: Theory, Practice, and Tools</span></h3>
-              <p class="pub-authors pub-authors-default">with Gerardo Flores, Abby Schiff, Alyssa Smith, Julia Fukuyama. <a href="https://arxiv.org/pdf/2504.04528">arXiv</a> &middot; <span class="pub-topic">&#10003; Evaluation</span></p>
-              <p class="pub-authors pub-authors-eval">with Gerardo Flores, Abby Schiff, Alyssa Smith, Julia Fukuyama</p>
-              <p class="pub-description pub-description-default">Classification models are often compared using fixed thresholds or aggregate metrics that can be poorly matched to how their predictions will actually be used. We develop a decision-theoretic framework for choosing evaluation metrics based on the downstream consequences of prediction, showing how properties of the deployment setting determine which measures meaningfully distinguish between models.</p>
-              <p class="pub-description pub-description-eval">Classification models are often compared using accuracy, AUC, or fixed thresholds, even when those metrics are poorly matched to how predictions will actually be used. We develop a decision-theoretic framework that derives evaluation metrics from downstream consequences, showing how the deployment setting determines which distinctions between models matter.</p>
+              <p class="pub-authors pub-authors-flat">with Gerardo Flores, Abby Schiff, Alyssa Smith, Julia Fukuyama. <a href="https://arxiv.org/pdf/2504.04528">arXiv</a> &middot; <span class="pub-topic">&#10003; Evaluation</span></p>
+              <p class="pub-authors pub-authors-grouped">with Gerardo Flores, Abby Schiff, Alyssa Smith, Julia Fukuyama</p>
+              <p class="pub-description pub-description-flat">Classification models are often compared using fixed thresholds or aggregate metrics that can be poorly matched to how their predictions will actually be used. We develop a decision-theoretic framework for choosing evaluation metrics based on the downstream consequences of prediction, showing how properties of the deployment setting determine which measures meaningfully distinguish between models.</p>
+              <p class="pub-description pub-description-grouped">Classification models are often compared using accuracy, AUC, or fixed thresholds, even when those metrics are poorly matched to how predictions will actually be used. We develop a decision-theoretic framework that derives evaluation metrics from downstream consequences, showing how the deployment setting determines which distinctions between models matter.</p>
             </div>
           </div>
 
@@ -156,10 +172,10 @@
             <div class="pub-meta"><span class="pub-venue-plain">AISTATS OPTIMAL WORKSHOP 2026</span><a class="pub-venue-link" href="https://arxiv.org/pdf/2605.01936" target="_blank" rel="noopener noreferrer">AISTATS OPTIMAL WORKSHOP 2026</a></div>
             <div class="pub-content">
               <h3>Pandora's Regret: A Proper Scoring Rule for Evaluating Sequential Search</h3>
-              <p class="pub-authors pub-authors-default">with Gerardo Flores, Yash Deshpande, Jannis R. Brea. <a href="https://arxiv.org/pdf/2605.01936">arXiv</a> &middot; <span class="pub-topic">&#10003; Evaluation</span></p>
-              <p class="pub-authors pub-authors-eval">with Gerardo Flores, Yash Deshpande, Jannis R. Brea</p>
-              <p class="pub-description pub-description-default">Standard classification metrics evaluate predictions independently, even when predictions are used to determine the order in which alternatives are searched or tested. We develop Pandora&rsquo;s Regret, a proper scoring rule derived from the downstream cost of sequential search, aligning model evaluation with the decisions that predictions ultimately support.</p>
-              <p class="pub-description pub-description-eval">Standard scoring rules evaluate predictions independently, but predictions used for sequential search matter through the order and cost of the resulting search process. We develop Pandora&rsquo;s Regret, a proper scoring rule derived from downstream search costs, aligning model evaluation with the decision problem that predictions support.</p>
+              <p class="pub-authors pub-authors-flat">with Gerardo Flores, Yash Deshpande, Jannis R. Brea. <a href="https://arxiv.org/pdf/2605.01936">arXiv</a> &middot; <span class="pub-topic">&#10003; Evaluation</span></p>
+              <p class="pub-authors pub-authors-grouped">with Gerardo Flores, Yash Deshpande, Jannis R. Brea</p>
+              <p class="pub-description pub-description-flat">Standard classification metrics evaluate predictions independently, even when predictions are used to determine the order in which alternatives are searched or tested. We develop Pandora&rsquo;s Regret, a proper scoring rule derived from the downstream cost of sequential search, aligning model evaluation with the decisions that predictions ultimately support.</p>
+              <p class="pub-description pub-description-grouped">Standard scoring rules evaluate predictions independently, but predictions used for sequential search matter through the order and cost of the resulting search process. We develop Pandora&rsquo;s Regret, a proper scoring rule derived from downstream search costs, aligning model evaluation with the decision problem that predictions support.</p>
             </div>
           </div>
 
@@ -167,10 +183,10 @@
             <div class="pub-meta"><span class="pub-venue-plain">NEURIPS 2025</span><a class="pub-venue-link" href="https://arxiv.org/pdf/2506.14540" target="_blank" rel="noopener noreferrer">NEURIPS 2025</a></div>
             <div class="pub-content">
               <h3>Aligning Evaluation with Clinical Priorities<span class="pub-title-rest">: Calibration, Label Shift, and Error Costs</span></h3>
-              <p class="pub-authors pub-authors-default">with Gerardo Flores, Alyssa Smith, Julia Fukuyama. <a href="https://arxiv.org/pdf/2506.14540">arXiv</a> &middot; <span class="pub-topic">&#10003; Evaluation</span></p>
-              <p class="pub-authors pub-authors-eval">with Gerardo Flores, Alyssa Smith, Julia Fukuyama</p>
-              <p class="pub-description pub-description-default">Clinical prediction systems operate under changing disease prevalence and asymmetric costs of different errors, yet common metrics such as accuracy and AUC can ignore these deployment realities. We develop a decision-theoretic evaluation framework that incorporates calibration, label shift, and clinically meaningful error costs, enabling model comparisons that better reflect the conditions and priorities of real clinical use.</p>
-              <p class="pub-description pub-description-eval">Accuracy and AUC can obscure calibration, label shift, and asymmetric error costs that determine clinical value. Building on the theory of proper scoring rules, we derive new bounded, cost-sensitive log scores that connect calibration to decision performance across clinically relevant ranges of class prevalence, providing principled metrics for comparing models under uncertain deployment conditions.</p>
+              <p class="pub-authors pub-authors-flat">with Gerardo Flores, Alyssa Smith, Julia Fukuyama. <a href="https://arxiv.org/pdf/2506.14540">arXiv</a> &middot; <span class="pub-topic">&#10003; Evaluation</span></p>
+              <p class="pub-authors pub-authors-grouped">with Gerardo Flores, Alyssa Smith, Julia Fukuyama</p>
+              <p class="pub-description pub-description-flat">Clinical prediction systems operate under changing disease prevalence and asymmetric costs of different errors, yet common metrics such as accuracy and AUC can ignore these deployment realities. We develop a decision-theoretic evaluation framework that incorporates calibration, label shift, and clinically meaningful error costs, enabling model comparisons that better reflect the conditions and priorities of real clinical use.</p>
+              <p class="pub-description pub-description-grouped">Accuracy and AUC can obscure calibration, label shift, and asymmetric error costs that determine clinical value. Building on the theory of proper scoring rules, we derive new bounded, cost-sensitive log scores that connect calibration to decision performance across clinically relevant ranges of class prevalence, providing principled metrics for comparing models under uncertain deployment conditions.</p>
             </div>
           </div>
 
@@ -181,10 +197,10 @@
             </div>
             <div class="pub-content">
               <h3>Algorithmic Pluralism: A Structural Approach to Equal Opportunity</h3>
-              <p class="pub-authors pub-authors-default">with Shomik Jain, Vinith Suriyakumar, Kathleen Creel. <a href="https://arxiv.org/pdf/2305.08157.pdf">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety</span></p>
-              <p class="pub-authors pub-authors-eval">with Shomik Jain, Vinith Suriyakumar, Kathleen Creel</p>
-              <p class="pub-description pub-description-default">What equal opportunity requires cannot always be determined by evaluating individual algorithmic decisions in isolation; it depends on how systems collectively structure access to opportunity. We develop algorithmic pluralism as a normative and evaluative framework, arguing that systems should preserve multiple viable pathways to opportunity and be evaluated by the severity and legitimacy of the bottlenecks they create.</p>
-              <p class="pub-description pub-description-eval">Equal opportunity cannot always be evaluated from individual decisions in isolation because multiple systems collectively determine which pathways to opportunity remain available. We develop algorithmic pluralism as a framework for evaluating the diversity and legitimacy of these pathways, shifting attention from isolated predictions to the structural bottlenecks created by an algorithmic ecosystem.</p>
+              <p class="pub-authors pub-authors-flat">with Shomik Jain, Vinith Suriyakumar, Kathleen Creel. <a href="https://arxiv.org/pdf/2305.08157.pdf">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety</span></p>
+              <p class="pub-authors pub-authors-grouped">with Shomik Jain, Vinith Suriyakumar, Kathleen Creel</p>
+              <p class="pub-description pub-description-flat">What equal opportunity requires cannot always be determined by evaluating individual algorithmic decisions in isolation; it depends on how systems collectively structure access to opportunity. We develop algorithmic pluralism as a normative and evaluative framework, arguing that systems should preserve multiple viable pathways to opportunity and be evaluated by the severity and legitimacy of the bottlenecks they create.</p>
+              <p class="pub-description pub-description-grouped">Equal opportunity cannot always be evaluated from individual decisions in isolation because multiple systems collectively determine which pathways to opportunity remain available. We develop algorithmic pluralism as a framework for evaluating the diversity and legitimacy of these pathways, shifting attention from isolated predictions to the structural bottlenecks created by an algorithmic ecosystem.</p>
             </div>
           </div>
 
@@ -192,10 +208,10 @@
             <div class="pub-meta"><span class="pub-venue-plain">FACCT 2025</span><a class="pub-venue-link" href="https://arxiv.org/pdf/2503.16621v1" target="_blank" rel="noopener noreferrer">FACCT 2025</a></div>
             <div class="pub-content">
               <h3>Allocation Multiplicity: Evaluating the Promises of the Rashomon Set</h3>
-              <p class="pub-authors pub-authors-default">with Shomik Jain, Margaret Wang, Kathleen Creel. <a href="https://arxiv.org/pdf/2503.16621v1">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety &middot; &#10003; Evaluation</span></p>
-              <p class="pub-authors pub-authors-eval">with Shomik Jain, Margaret Wang, Kathleen Creel</p>
-              <p class="pub-description pub-description-default">When many models perform equally well, model multiplicity is often taken to imply greater flexibility, fairness, or diversity in downstream decisions. We show that multiplicity in predictive models need not translate into multiplicity in the allocations that ultimately matter, motivating evaluation at the level of downstream opportunities rather than model predictions alone.</p>
-              <p class="pub-description pub-description-eval">Model multiplicity is often used as evidence that decision-makers have meaningful flexibility among equally accurate models, but differences between models need not produce differences in allocations. We show that evaluation must examine the opportunities people actually receive, distinguishing predictive multiplicity from allocation multiplicity.</p>
+              <p class="pub-authors pub-authors-flat">with Shomik Jain, Margaret Wang, Kathleen Creel. <a href="https://arxiv.org/pdf/2503.16621v1">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety &middot; &#10003; Evaluation</span></p>
+              <p class="pub-authors pub-authors-grouped">with Shomik Jain, Margaret Wang, Kathleen Creel</p>
+              <p class="pub-description pub-description-flat">When many models perform equally well, model multiplicity is often taken to imply greater flexibility, fairness, or diversity in downstream decisions. We show that multiplicity in predictive models need not translate into multiplicity in the allocations that ultimately matter, motivating evaluation at the level of downstream opportunities rather than model predictions alone.</p>
+              <p class="pub-description pub-description-grouped">Model multiplicity is often used as evidence that decision-makers have meaningful flexibility among equally accurate models, but differences between models need not produce differences in allocations. We show that evaluation must examine the opportunities people actually receive, distinguishing predictive multiplicity from allocation multiplicity.</p>
             </div>
           </div>
 
@@ -203,127 +219,313 @@
             <div class="pub-meta"><span class="pub-venue-plain">FACCT 2026</span><a class="pub-venue-link" href="https://facctconference.org/2026/acceptedpapers.html" target="_blank" rel="noopener noreferrer">FACCT 2026</a></div>
             <div class="pub-content">
               <h3>Impacts of Semivalue-Based Data Curation on Fair Machine Learning Outcomes</h3>
-              <p class="pub-authors pub-authors-default">with Hannah Diehl, Justin Steil. <a href="https://facctconference.org/2026/acceptedpapers.html" target="_blank" rel="noopener noreferrer">paper</a> &middot; <span class="pub-topic">&#10003; Evaluation &middot; &#9670; Safety</span></p>
-              <p class="pub-authors pub-authors-eval">with Hannah Diehl, Justin Steil</p>
-              <p class="pub-description pub-description-eval">Data-valuation methods are often evaluated through aggregate model performance, even though using those values to curate training data can redistribute errors and benefits across groups. We study how semivalue-based curation affects predictive performance and fairness, evaluating data-selection methods through the downstream outcomes they produce.</p>
+              <p class="pub-authors pub-authors-flat">with Hannah Diehl, Justin Steil. <a href="https://facctconference.org/2026/acceptedpapers.html" target="_blank" rel="noopener noreferrer">paper</a> &middot; <span class="pub-topic">&#10003; Evaluation &middot; &#9670; Safety</span></p>
+              <p class="pub-authors pub-authors-grouped">with Hannah Diehl, Justin Steil</p>
+              <p class="pub-description pub-description-flat">Data-valuation methods are often evaluated through aggregate model performance, even though using those values to curate training data can redistribute errors and benefits across groups. We study how semivalue-based curation affects predictive performance and fairness, evaluating data-selection methods through the downstream outcomes they produce.</p>
+              <p class="pub-description pub-description-grouped">Data-valuation methods are often evaluated through aggregate model performance, even though using those values to curate training data can redistribute errors and benefits across groups. We study how semivalue-based curation affects predictive performance and fairness, evaluating data-selection methods through the downstream outcomes they produce.</p>
             </div>
           </div>
         </div>
 
-        <!-- ============ NON-EVALUATION PAPERS (unchanged) ============ -->
+        <!-- ============ OPTIMIZATION GROUP 1 ============ -->
+        <div class="pub-group pub-group-optimization pub-group-lead">
+          <div class="pub-group-head">
+            <h2 class="pub-group-question">How do models learn efficiently?</h2>
+            <p class="pub-group-sub">Geometry and dynamics for optimization and sampling.</p>
+          </div>
 
         <div class="publication" data-tags="optimization">
-          <div class="pub-meta">PREPRINT 2026</div>
+          <div class="pub-meta"><span class="pub-venue-plain">COLT 2026</span><a class="pub-venue-link" href="https://arxiv.org/pdf/2606.17260" target="_blank" rel="noopener noreferrer">COLT 2026</a></div>
+          <div class="pub-content">
+            <h3>Accelerated Convex Optimization via Hamiltonian Dynamics with Deterministic Integration Time</h3>
+            <p class="pub-authors pub-authors-flat">with Xiuyuan Wang, Vishwak Srinivasan, Qiang Fu, Siddharth Mitra, Andre Wibisono. <a href="https://arxiv.org/pdf/2606.17260">arXiv</a> &middot; <span class="pub-topic">&nabla; Optimization</span></p>
+            <p class="pub-authors pub-authors-grouped">with Xiuyuan Wang, Vishwak Srinivasan, Qiang Fu, Siddharth Mitra, Andre Wibisono</p>
+            <p class="pub-description">Optimization and sampling are closely connected through the continuous-time dynamics that underlie their algorithms. We show that Hamiltonian dynamics, a central tool in modern sampling, can also serve as a primitive for deterministic accelerated optimization by exploiting contraction of averaged trajectories, yielding practical algorithms with optimal first-order complexity.</p>
+          </div>
+        </div>
+
+        <div class="publication" data-tags="optimization">
+          <div class="pub-meta"><span class="pub-venue-plain">ICLR 2025</span><a class="pub-venue-link" href="https://arxiv.org/pdf/2408.13150" target="_blank" rel="noopener noreferrer">ICLR 2025</a></div>
+          <div class="pub-content">
+            <h3>Adaptive Backtracking Line Search</h3>
+            <p class="pub-authors pub-authors-flat">with Laurent Lessard, Joao Cavalcanti. <a href="https://arxiv.org/pdf/2408.13150">arXiv</a> &middot; <span class="pub-topic">&nabla; Optimization</span></p>
+            <p class="pub-authors pub-authors-grouped">with Laurent Lessard, Joao Cavalcanti</p>
+            <p class="pub-description">The performance of optimization algorithms often depends critically on choosing appropriate step sizes, yet standard backtracking adjusts them using a fixed rule that ignores how badly a candidate step fails. We develop an adaptive line search that uses the magnitude of this violation to choose better steps, improving practical optimization speed without sacrificing the convergence guarantees of classical methods.</p>
+          </div>
+        </div>
+
+        <div class="publication" data-tags="optimization">
+          <div class="pub-meta"><span class="pub-venue-plain">ALT 2025</span><a class="pub-venue-link" href="https://arxiv.org/pdf/2412.18701" target="_blank" rel="noopener noreferrer">ALT 2025</a></div>
+          <div class="pub-content">
+            <h3>High-accuracy sampling from constrained spaces with the Metropolis-adjusted Preconditioned Langevin Algorithm</h3>
+            <p class="pub-authors pub-authors-flat">with Vishwak Srinivasan, Andre Wibisono. <a href="https://arxiv.org/pdf/2412.18701">arXiv</a> &middot; <span class="pub-topic">&nabla; Optimization</span></p>
+            <p class="pub-authors pub-authors-grouped">with Vishwak Srinivasan, Andre Wibisono</p>
+            <p class="pub-description">Many inference problems require sampling from high-dimensional distributions subject to complex constraints, where standard Euclidean sampling methods can be inefficient. We develop a geometry-aware Langevin sampler inspired by preconditioned and natural-gradient optimization, showing how optimization geometry can be transferred to sampling to obtain high-accuracy guarantees for distributions supported on constrained spaces.</p>
+          </div>
+        </div>
+
+        <div class="publication" data-tags="optimization">
+          <div class="pub-meta"><span class="pub-venue-plain">COLT 2024</span><a class="pub-venue-link" href="https://proceedings.mlr.press/v247/srinivasan24a.html" target="_blank" rel="noopener noreferrer">COLT 2024</a></div>
+          <div class="pub-content">
+            <h3>Fast Sampling from Constrained Spaces Using the Metropolis-Adjusted Mirror Langevin Algorithm</h3>
+            <p class="pub-authors pub-authors-flat">with Vishwak Srinivasan, Andre Wibisono. <a href="https://proceedings.mlr.press/v247/srinivasan24a.html">paper</a> &middot; <span class="pub-topic">&nabla; Optimization</span></p>
+            <p class="pub-authors pub-authors-grouped">with Vishwak Srinivasan, Andre Wibisono</p>
+            <p class="pub-description">Sampling from distributions constrained to compact convex sets is challenging because standard Euclidean methods can handle boundary geometry poorly, while existing Mirror Langevin discretizations introduce asymptotic bias. We develop the Metropolis-adjusted Mirror Langevin algorithm, which combines mirror geometry with an accept-reject correction to obtain unbiased sampling and mixing guarantees with exponentially better dependence on the target accuracy.</p>
+          </div>
+        </div>
+        </div>
+
+        <!-- ============ OPTIMIZATION GROUP 2 ============ -->
+        <div class="pub-group pub-group-optimization">
+          <div class="pub-group-head">
+            <h2 class="pub-group-question">How can learning remain effective under constraints?</h2>
+            <p class="pub-group-sub">Preserving utility under privacy and resource constraints.</p>
+          </div>
+
+        <div class="publication" data-tags="optimization">
+          <div class="pub-meta"><span class="pub-venue-plain">PREPRINT 2026</span><a class="pub-venue-link" href="https://arxiv.org/abs/2608.12026" target="_blank" rel="noopener noreferrer">PREPRINT 2026</a></div>
           <div class="pub-content">
             <h3>SoftWater: Class-Aware Rate Allocation for Softmax Quantization</h3>
-            <p class="pub-authors">with Joao Cavalcanti. <a href="https://arxiv.org/abs/2608.12026">arXiv</a> &middot; <span class="pub-topic">&nabla; Optimization</span></p>
+            <p class="pub-authors pub-authors-flat">with Joao Cavalcanti. <a href="https://arxiv.org/abs/2608.12026">arXiv</a> &middot; <span class="pub-topic">&nabla; Optimization</span></p>
+            <p class="pub-authors pub-authors-grouped">with Joao Cavalcanti</p>
             <p class="pub-description">Modern language models can be expensive to store and deploy, and standard quantization methods often leave the large softmax output layer in high precision. We formulate softmax quantization as a class-aware rate-distortion problem and develop SoftWater, which allocates precision according to how different classes affect the model&rsquo;s output distribution, substantially reducing memory while preserving predictive quality.</p>
           </div>
         </div>
 
         <div class="publication" data-tags="optimization safety">
-          <div class="pub-meta">PREPRINT 2026</div>
+          <div class="pub-meta"><span class="pub-venue-plain">PREPRINT 2026</span><a class="pub-venue-link" href="https://arxiv.org/abs/2605.30600" target="_blank" rel="noopener noreferrer">PREPRINT 2026</a></div>
           <div class="pub-content">
             <h3>The Fast Mixing Mechanism for Differential Privacy</h3>
-            <p class="pub-authors">with Omri Lev, Moshe Shenfeld, Vishwak Srinivasan, Katrina Ligett. <a href="https://arxiv.org/abs/2605.30600">arXiv</a> &middot; <span class="pub-topic">&nabla; Optimization &middot; &#9670; Safety</span></p>
+            <p class="pub-authors pub-authors-flat">with Omri Lev, Moshe Shenfeld, Vishwak Srinivasan, Katrina Ligett. <a href="https://arxiv.org/abs/2605.30600">arXiv</a> &middot; <span class="pub-topic">&nabla; Optimization &middot; &#9670; Safety</span></p>
+            <p class="pub-authors pub-authors-grouped">with Omri Lev, Moshe Shenfeld, Vishwak Srinivasan, Katrina Ligett</p>
             <p class="pub-description">Randomized sketching can make large optimization problems cheaper to solve while also providing privacy through its inherent randomness, but existing private sketches can remain computationally expensive. We develop a privacy mechanism based on fast randomized transforms that retains strong privacy and accuracy guarantees while enabling faster private linear regression, connecting computational efficiency and privacy within a common algorithmic primitive.</p>
           </div>
         </div>
+
+        <div class="publication" data-tags="safety optimization selected">
+          <div>
+            <div class="pub-meta"><span class="pub-venue-plain">ICML 2026</span><a class="pub-venue-link" href="https://arxiv.org/pdf/2601.07545" target="_blank" rel="noopener noreferrer">ICML 2026</a></div>
+            <div class="pub-badge">SPOTLIGHT</div>
+          </div>
+          <div class="pub-content">
+            <h3>Near-Optimal Private Linear Regression via Iterative Hessian Mixing</h3>
+            <p class="pub-authors pub-authors-flat">with Omri Lev, Vishwak Srinivasan, Moshe Shenfeld, Katrina Ligett. <a href="https://arxiv.org/pdf/2601.07545">arXiv</a> &middot; <span class="pub-topic">&nabla; Optimization &middot; &#9670; Safety</span></p>
+            <p class="pub-authors pub-authors-grouped">with Omri Lev, Vishwak Srinivasan, Moshe Shenfeld, Katrina Ligett</p>
+            <p class="pub-description">Differential privacy makes it possible to learn from sensitive data while providing formal guarantees about individual privacy, but these guarantees can come at a substantial cost to statistical accuracy. We develop Iterative Hessian Mixing, a Gaussian-sketching approach to private linear regression that achieves near-optimal accuracy and improves over state-of-the-art methods.</p>
+          </div>
+        </div>
+
+        <div class="publication" data-tags="safety optimization">
+          <div class="pub-meta"><span class="pub-venue-plain">NEURIPS 2025</span><a class="pub-venue-link" href="https://arxiv.org/pdf/2505.24603" target="_blank" rel="noopener noreferrer">NEURIPS 2025</a></div>
+          <div class="pub-content">
+            <h3>The Gaussian Mixing Mechanism: Renyi Differential Privacy via Gaussian Sketches</h3>
+            <p class="pub-authors pub-authors-flat">with Omri Lev, Vishwak Srinivasan, Moshe Shenfeld, Katrina Ligett, Ayush Sekhari. <a href="https://arxiv.org/pdf/2505.24603">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety &middot; &nabla; Optimization</span></p>
+            <p class="pub-authors pub-authors-grouped">with Omri Lev, Vishwak Srinivasan, Moshe Shenfeld, Katrina Ligett, Ayush Sekhari</p>
+            <p class="pub-description">Randomization used to make optimization more computationally efficient can also provide formal privacy guarantees. We develop a sharper privacy analysis of Gaussian sketching and show how the same randomized compression operation can simultaneously support efficient computation and differential privacy, leading to improved accuracy for private linear regression and, in some settings, reduced runtime.</p>
+          </div>
+        </div>
+        </div>
+
+        <!-- ============ SAFETY GROUPS (shown only under the Safety filter) ============ -->
+        <div class="pub-group pub-group-safety pub-group-lead">
+          <div class="pub-group-head">
+            <h2 class="pub-group-question">How can harmful model behavior be detected and controlled?</h2>
+            <p class="pub-group-sub">Non-generative auditing, model steering, and durable unlearning.</p>
+          </div>
+
+        <div class="publication" data-tags="safety-grouped">
+          <div>
+            <div class="pub-meta"><a href="https://arxiv.org/abs/2604.25119" target="_blank" rel="noopener noreferrer">AI4GOOD WORKSHOP</a></div>
+            <div class="pub-badge">SPOTLIGHT</div>
+          </div>
+          <div class="pub-content">
+            <h3>Evaluation without Generation: Non-Generative Assessment of Harmful Model Specialization with Applications to CSAM</h3>
+            <p class="pub-authors">with Vinith Suriyakumar, Ayush Sekhari, Lena Stempfle, Robertson Wang, Michael Simpson, Rebecca Portnoff, Marzyeh Ghassemi</p>
+            <p class="pub-description">Some harmful model capabilities cannot be safely or lawfully evaluated by generating outputs, making the usual behavioral evidence unavailable. We develop Evaluation without Generation, the first machine-learning screening method evaluated on CSAM-specialized LoRAs found in the wild, detecting harmful model specialization without generating or inspecting CSAM.</p>
+          </div>
+        </div>
+
+        <div class="publication" data-tags="safety-grouped">
+          <div class="pub-meta"><a href="https://arxiv.org/abs/2602.00333" target="_blank" rel="noopener noreferrer">PNAS 2026</a></div>
+          <div class="pub-content">
+            <h3>Efficient and Accurate Steering of Large Language Models through Attention-Guided Feature Learning</h3>
+            <p class="pub-authors">with Parmida Davarmanesh, Adityanarayanan Radhakrishnan</p>
+            <p class="pub-description">Activation steering offers an efficient way to control LLM behavior without retraining, but existing methods are brittle because concept-related features can vary across tokens, activations, and layers. We develop an attention-guided framework that automatically identifies the features and layers most relevant for steering, nearly doubling the number of successfully steered concepts across model architectures and sizes up to 70 billion parameters.</p>
+          </div>
+        </div>
+
+        <div class="publication" data-tags="safety-grouped">
+          <div class="pub-meta"><a href="https://arxiv.org/pdf/2410.08074" target="_blank" rel="noopener noreferrer">TMLR 2026</a></div>
+          <div class="pub-content">
+            <h3>Unstable Unlearning: The Hidden Risk of Concept Resurgence in Diffusion Models</h3>
+            <p class="pub-authors">with Vinith Suriyakumar, Rohan Alur, Ayush Sekhari, Manish Raghavan</p>
+            <p class="pub-description">Machine unlearning methods are typically evaluated immediately after a concept has been removed, implicitly treating successful forgetting as a static property of the model. We show that subsequent benign fine-tuning can cause supposedly unlearned concepts to reappear, revealing that evaluations of unlearning must test whether safety interventions remain effective under realistic sequences of model updates.</p>
+          </div>
+        </div>
+
+        <div class="publication" data-tags="safety-grouped">
+          <div class="pub-meta"><a href="https://arxiv.org/pdf/2506.12097" target="_blank" rel="noopener noreferrer">PREPRINT 2025</a></div>
+          <div class="pub-content">
+            <h3>UCD: Unlearning in LLMs via Contrastive Decoding</h3>
+            <p class="pub-authors">with Vinith M. Suriyakumar, Ayush Sekhari</p>
+            <p class="pub-description">Removing sensitive or undesirable information from large language models can require expensive retraining and can degrade performance on unrelated tasks. We develop UCD, an inference-time unlearning method that uses contrastive decoding between smaller auxiliary models to suppress targeted information while preserving the original model&rsquo;s utility, improving both forgetting and retained performance on standard unlearning benchmarks.</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="pub-group pub-group-safety">
+          <div class="pub-group-head">
+            <h2 class="pub-group-question">How do AI systems affect human agency and collective knowledge?</h2>
+            <p class="pub-group-sub">Sycophancy, co-creation, and epistemic diversity.</p>
+          </div>
+
+        <div class="publication" data-tags="safety-grouped">
+          <div class="pub-meta"><a href="https://arxiv.org/pdf/2604.21827" target="_blank" rel="noopener noreferrer">ICLR HCAIR WORKSHOP</a></div>
+          <div class="pub-content">
+            <h3>Position: Alignment has a Fantasia Problem</h3>
+            <p class="pub-authors">with Nathanael Jo, Zoe De Simone, Mitchell Gordon</p>
+            <p class="pub-description">AI assistants are typically evaluated by how well they satisfy a user&rsquo;s request, but users often approach complex tasks before their goals and intentions are fully formed. We argue that effective assistance should instead account for the user&rsquo;s evolving cognitive process, motivating evaluations that ask not only whether a task was completed, but whether the system preserved appropriate human judgment and agency throughout the interaction.</p>
+          </div>
+        </div>
+
+        <div class="publication" data-tags="safety-grouped">
+          <div class="pub-meta"><a href="https://arxiv.org/pdf/2604.13956" target="_blank" rel="noopener noreferrer">PREPRINT 2026</a></div>
+          <div class="pub-content">
+            <h3>Creo: From One-Shot Image Generation to Progressive, Co-Creative Ideation</h3>
+            <p class="pub-authors">with Zoe De Simone, Angie Boggust, Fredo Durand, Arvind Satyanarayan</p>
+            <p class="pub-description">One-shot image generation can make visual decisions before a user&rsquo;s intentions are fully formed, prematurely anchoring the creative process and reducing the user&rsquo;s control over subsequent edits. We develop Creo, a multi-stage system that progresses from editable sketches to high-fidelity images while preserving prior decisions, enabling greater exploration, stronger user ownership, and less homogeneous outputs than conventional one-shot generation.</p>
+          </div>
+        </div>
+
+        <div class="publication" data-tags="safety-grouped">
+          <div>
+            <div class="pub-meta"><a href="https://arxiv.org/pdf/2509.12517" target="_blank" rel="noopener noreferrer">CHI 2026</a></div>
+            <div class="pub-badge outline">HONORABLE MENTION</div>
+          </div>
+          <div class="pub-content">
+            <h3>Interaction Context Often Increases Sycophancy in LLMs</h3>
+            <p class="pub-authors">with Shomik Jain, Charlotte Park, Matheus Vianna, Dana Calacci</p>
+            <p class="pub-description">AI systems increasingly personalize their responses using information about users and their prior interactions, but this context can also amplify problematic forms of agreement and mirroring. We show that interaction context often increases sycophancy, highlighting how context-free evaluations can underestimate behaviors that raise concerns about user autonomy and psychological harm in real-world interactions.</p>
+          </div>
+        </div>
+
+        <div class="publication" data-tags="safety-grouped">
+          <div class="pub-meta"><a href="https://arxiv.org/abs/2509.21267" target="_blank" rel="noopener noreferrer">PREPRINT 2025</a></div>
+          <div class="pub-content">
+            <h3>Task-Dependent Evaluation of LLM Output Homogenization: A Taxonomy-Guided Framework</h3>
+            <p class="pub-authors">with Shomik Jain, Jack Lanchantin, Maximilian Nickel, Karen Ullrich, Candace Ross, Jamelle Watson-Daniels</p>
+            <p class="pub-description">Whether homogeneous language-model outputs are harmful depends on the task: creative writing may benefit from variation in narrative content, while mathematical reasoning may require agreement on a verifiable answer. We develop and validate a taxonomy of task-dependent functional diversity, then introduce a sampling method that increases diversity where it is valuable without imposing a task-agnostic tradeoff between diversity and quality.</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="pub-group pub-group-safety">
+          <div class="pub-group-head">
+            <h2 class="pub-group-question">How do algorithms reshape access to opportunity?</h2>
+            <p class="pub-group-sub">Pluralism, competition, and consequential allocation.</p>
+          </div>
+
+        <div class="publication" data-tags="safety-grouped">
+          <div class="pub-meta"><a href="https://facctconference.org/2026/acceptedpapers.html" target="_blank" rel="noopener noreferrer">FACCT 2026</a></div>
+          <div class="pub-content">
+            <h3>Impacts of Semivalue-Based Data Curation on Fair Machine Learning Outcomes</h3>
+            <p class="pub-authors">with Hannah Diehl, Justin Steil</p>
+            <p class="pub-description">Data-valuation methods are often evaluated through aggregate model performance, even though using those values to curate training data can redistribute errors and benefits across groups. We study how semivalue-based curation affects predictive performance and fairness, evaluating data-selection methods through the downstream outcomes they produce.</p>
+          </div>
+        </div>
+
+        <div class="publication" data-tags="safety-grouped">
+          <div class="pub-meta"><a href="https://arxiv.org/pdf/2503.15634" target="_blank" rel="noopener noreferrer">NEURIPS 2025</a></div>
+          <div class="pub-content">
+            <h3>Homogeneous Algorithms Can Reduce Competition in Personalized Pricing</h3>
+            <p class="pub-authors">with Nathan Jo, Kathleen Creel, Manish Raghavan</p>
+            <p class="pub-description">Firms increasingly rely on similar data, objectives, and pretrained models, causing their pricing algorithms to produce correlated predictions even without direct coordination. We model this phenomenon in personalized pricing and show that greater algorithmic correlation reduces consumer welfare and can incentivize firms to sacrifice predictive accuracy for implicit coordination as consumers become more price sensitive.</p>
+          </div>
+        </div>
+
+        <div class="publication" data-tags="safety-grouped">
+          <div class="pub-meta"><a href="https://arxiv.org/pdf/2503.16621v1" target="_blank" rel="noopener noreferrer">FACCT 2025</a></div>
+          <div class="pub-content">
+            <h3>Allocation Multiplicity: Evaluating the Promises of the Rashomon Set</h3>
+            <p class="pub-authors">with Shomik Jain, Margaret Wang, Kathleen Creel</p>
+            <p class="pub-description">When many models perform equally well, model multiplicity is often taken to imply greater flexibility, fairness, or diversity in downstream decisions. We show that multiplicity in predictive models need not translate into multiplicity in the allocations that ultimately matter, motivating evaluation at the level of downstream opportunities rather than model predictions alone.</p>
+          </div>
+        </div>
+
+        <div class="publication" data-tags="safety-grouped">
+          <div>
+            <div class="pub-meta"><a href="https://arxiv.org/pdf/2305.08157.pdf" target="_blank" rel="noopener noreferrer">FACCT 2024</a></div>
+            <div class="pub-badge">BEST PAPER</div>
+          </div>
+          <div class="pub-content">
+            <h3>Algorithmic Pluralism: A Structural Approach to Equal Opportunity</h3>
+            <p class="pub-authors">with Shomik Jain, Vinith Suriyakumar, Kathleen Creel</p>
+            <p class="pub-description">What equal opportunity requires cannot always be determined by evaluating individual algorithmic decisions in isolation; it depends on how systems collectively structure access to opportunity. We develop algorithmic pluralism as a normative and evaluative framework, arguing that systems should preserve multiple viable pathways to opportunity and be evaluated by the severity and legitimacy of the bottlenecks they create.</p>
+          </div>
+        </div>
+
+        <div class="publication" data-tags="safety-grouped">
+          <div class="pub-meta"><a href="https://arxiv.org/pdf/2404.08592.pdf" target="_blank" rel="noopener noreferrer">ICML 2024</a></div>
+          <div class="pub-content">
+            <h3>Scarce Resource Allocations That Rely on Machine Learning Should Be Randomized</h3>
+            <p class="pub-authors">with Shomik Jain, Kathleen Creel</p>
+            <p class="pub-description">Machine-learning systems used to allocate scarce resources often convert uncertain predictions into deterministic decisions, denying individuals with legitimate competing claims any meaningful chance of receiving an opportunity. We argue that fair allocation can require randomization and develop stochastic procedures that better account for the claims individuals have to scarce social goods and opportunities.</p>
+          </div>
+        </div>
+        </div>
+
+        <!-- ============ REMAINING PAPERS (unchanged) ============ -->
+
+
 
         <div class="publication" data-tags="safety">
           <div class="pub-meta">PREPRINT 2026</div>
           <div class="pub-content">
             <h3>Creo: From One-Shot Image Generation to Progressive, Co-Creative Ideation</h3>
             <p class="pub-authors">with Zoe De Simone, Angie Boggust, Fredo Durand, Arvind Satyanarayan. <a href="https://arxiv.org/pdf/2604.13956">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety</span></p>
+            <p class="pub-description">One-shot image generation can make visual decisions before a user&rsquo;s intentions are fully formed, prematurely anchoring the creative process and reducing the user&rsquo;s control over subsequent edits. We develop Creo, a multi-stage system that progresses from editable sketches to high-fidelity images while preserving prior decisions, enabling greater exploration, stronger user ownership, and less homogeneous outputs than conventional one-shot generation.</p>
           </div>
         </div>
 
-        <div class="publication" data-tags="optimization">
-          <div class="pub-meta">COLT 2026</div>
-          <div class="pub-content">
-            <h3>Accelerated Convex Optimization via Hamiltonian Dynamics with Deterministic Integration Time</h3>
-            <p class="pub-authors">with Xiuyuan Wang, Vishwak Srinivasan, Qiang Fu, Siddharth Mitra, Andre Wibisono. <a href="https://arxiv.org/pdf/2606.17260">arXiv</a> &middot; <span class="pub-topic">&nabla; Optimization</span></p>
-            <p class="pub-description">Optimization and sampling are closely connected through the continuous-time dynamics that underlie their algorithms. We show that Hamiltonian dynamics, a central tool in modern sampling, can also serve as a primitive for deterministic accelerated optimization by exploiting contraction of averaged trajectories, yielding practical algorithms with optimal first-order complexity.</p>
-          </div>
-        </div>
 
-        <div class="publication" data-tags="safety optimization selected">
-          <div>
-            <div class="pub-meta">ICML 2026</div>
-            <div class="pub-badge">SPOTLIGHT</div>
-          </div>
-          <div class="pub-content">
-            <h3>Near-Optimal Private Linear Regression via Iterative Hessian Mixing</h3>
-            <p class="pub-authors">with Omri Lev, Vishwak Srinivasan, Moshe Shenfeld, Katrina Ligett. <a href="https://arxiv.org/pdf/2601.07545">arXiv</a> &middot; <span class="pub-topic">&nabla; Optimization &middot; &#9670; Safety</span></p>
-            <p class="pub-description">Differential privacy makes it possible to learn from sensitive data while providing formal guarantees about individual privacy, but these guarantees can come at a substantial cost to statistical accuracy. We develop Iterative Hessian Mixing, a Gaussian-sketching approach to private linear regression that achieves near-optimal accuracy and improves over state-of-the-art methods.</p>
-          </div>
-        </div>
 
         <div class="publication" data-tags="safety">
           <div class="pub-meta">PNAS 2026</div>
           <div class="pub-content">
             <h3>Efficient and accurate steering of Large Language Models through attention-guided feature learning</h3>
             <p class="pub-authors">with Parmida Davarmanesh, Adityanarayanan Radhakrishnan. <a href="https://arxiv.org/abs/2602.00333">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety</span></p>
+            <p class="pub-description">Activation steering offers an efficient way to control LLM behavior without retraining, but existing methods are brittle because concept-related features can vary across tokens, activations, and layers. We develop an attention-guided framework that automatically identifies the features and layers most relevant for steering, nearly doubling the number of successfully steered concepts across model architectures and sizes up to 70 billion parameters.</p>
           </div>
         </div>
 
-        <div class="publication" data-tags="safety optimization">
-          <div class="pub-meta">NEURIPS 2025</div>
-          <div class="pub-content">
-            <h3>The Gaussian Mixing Mechanism: Renyi Differential Privacy via Gaussian Sketches</h3>
-            <p class="pub-authors">with Omri Lev, Vishwak Srinivasan, Moshe Shenfeld, Katrina Ligett, Ayush Sekhari. <a href="https://arxiv.org/pdf/2505.24603">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety &middot; &nabla; Optimization</span></p>
-            <p class="pub-description">Randomization used to make optimization more computationally efficient can also provide formal privacy guarantees. We develop a sharper privacy analysis of Gaussian sketching and show how the same randomized compression operation can simultaneously support efficient computation and differential privacy, leading to improved accuracy for private linear regression and, in some settings, reduced runtime.</p>
-          </div>
-        </div>
 
         <div class="publication" data-tags="safety">
           <div class="pub-meta">NEURIPS 2025</div>
           <div class="pub-content">
             <h3>Homogeneous Algorithms Can Reduce Competition in Personalized Pricing</h3>
             <p class="pub-authors">with Nathan Jo, Kathleen Creel, Manish Raghavan. <a href="https://arxiv.org/pdf/2503.15634">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety</span></p>
+            <p class="pub-description">Firms increasingly rely on similar data, objectives, and pretrained models, causing their pricing algorithms to produce correlated predictions even without direct coordination. We model this phenomenon in personalized pricing and show that greater algorithmic correlation reduces consumer welfare and can incentivize firms to sacrifice predictive accuracy for implicit coordination as consumers become more price sensitive.</p>
           </div>
         </div>
 
-        <div class="publication" data-tags="optimization">
-          <div class="pub-meta">ICLR 2025</div>
-          <div class="pub-content">
-            <h3>Adaptive Backtracking Line Search</h3>
-            <p class="pub-authors">with Laurent Lessard, Joao Cavalcanti. <a href="https://arxiv.org/pdf/2408.13150">arXiv</a> &middot; <span class="pub-topic">&nabla; Optimization</span></p>
-            <p class="pub-description">The performance of optimization algorithms often depends critically on choosing appropriate step sizes, yet standard backtracking adjusts them using a fixed rule that ignores how badly a candidate step fails. We develop an adaptive line search that uses the magnitude of this violation to choose better steps, improving practical optimization speed without sacrificing the convergence guarantees of classical methods.</p>
-          </div>
-        </div>
 
-        <div class="publication" data-tags="optimization">
-          <div class="pub-meta">ALT 2025</div>
-          <div class="pub-content">
-            <h3>High-accuracy sampling from constrained spaces with the Metropolis-adjusted Preconditioned Langevin Algorithm</h3>
-            <p class="pub-authors">with Vishwak Srinivasan, Andre Wibisono. <a href="https://arxiv.org/pdf/2412.18701">arXiv</a> &middot; <span class="pub-topic">&nabla; Optimization</span></p>
-            <p class="pub-description">Many inference problems require sampling from high-dimensional distributions subject to complex constraints, where standard Euclidean sampling methods can be inefficient. We develop a geometry-aware Langevin sampler inspired by preconditioned and natural-gradient optimization, showing how optimization geometry can be transferred to sampling to obtain high-accuracy guarantees for distributions supported on constrained spaces.</p>
-          </div>
-        </div>
 
-        <div class="publication" data-tags="optimization">
-          <div class="pub-meta">COLT 2024</div>
-          <div class="pub-content">
-            <h3>Fast Sampling from Constrained Spaces Using the Metropolis-Adjusted Mirror Langevin Algorithm</h3>
-            <p class="pub-authors">with Vishwak Srinivasan, Andre Wibisono. <a href="https://proceedings.mlr.press/v247/srinivasan24a.html">paper</a> &middot; <span class="pub-topic">&nabla; Optimization</span></p>
-            <p class="pub-description">Sampling from distributions constrained to compact convex sets is challenging because standard Euclidean methods can handle boundary geometry poorly, while existing Mirror Langevin discretizations introduce asymptotic bias. We develop the Metropolis-adjusted Mirror Langevin algorithm, which combines mirror geometry with an accept-reject correction to obtain unbiased sampling and mixing guarantees with exponentially better dependence on the target accuracy.</p>
-          </div>
-        </div>
 
         <div class="publication" data-tags="safety">
           <div class="pub-meta">ICML 2024</div>
           <div class="pub-content">
             <h3>Scarce Resource Allocations That Rely On Machine Learning Should Be Randomized</h3>
             <p class="pub-authors">with Shomik Jain, Kathleen Creel. <a href="https://arxiv.org/pdf/2404.08592.pdf">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety</span></p>
+            <p class="pub-description">Machine-learning systems used to allocate scarce resources often convert uncertain predictions into deterministic decisions, denying individuals with legitimate competing claims any meaningful chance of receiving an opportunity. We argue that fair allocation can require randomization and develop stochastic procedures that better account for the claims individuals have to scarce social goods and opportunities.</p>
           </div>
         </div>
 
         <div class="publication" data-tags="safety">
           <div class="pub-meta">PREPRINT 2025</div>
           <div class="pub-content">
-            <h3>LLM Output Homogenization is Task Dependent</h3>
-            <p class="pub-authors">with Shomik Jain, Jack Lanchantin, Maximilian Nickel, Karen Ullrich, Jamelle Watson-Daniels. <a href="https://arxiv.org/abs/2509.21267">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety</span></p>
+            <h3>Task-Dependent Evaluation of LLM Output Homogenization: A Taxonomy-Guided Framework</h3>
+            <p class="pub-authors">with Shomik Jain, Jack Lanchantin, Maximilian Nickel, Karen Ullrich, Candace Ross, Jamelle Watson-Daniels. <a href="https://arxiv.org/abs/2509.21267">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety</span></p>
+            <p class="pub-description">Whether homogeneous language-model outputs are harmful depends on the task: creative writing may benefit from variation in narrative content, while mathematical reasoning may require agreement on a verifiable answer. We develop and validate a taxonomy of task-dependent functional diversity, then introduce a sampling method that increases diversity where it is valuable without imposing a task-agnostic tradeoff between diversity and quality.</p>
           </div>
         </div>
 
@@ -332,6 +534,7 @@
           <div class="pub-content">
             <h3>UCD: Unlearning in LLMs via Contrastive Decoding</h3>
             <p class="pub-authors">with Vinith M. Suriyakumar, Ayush Sekhari. <a href="https://arxiv.org/pdf/2506.12097">arXiv</a> &middot; <span class="pub-topic">&#9670; Safety</span></p>
+            <p class="pub-description">Removing sensitive or undesirable information from large language models can require expensive retraining and can degrade performance on unrelated tasks. We develop UCD, an inference-time unlearning method that uses contrastive decoding between smaller auxiliary models to suppress targeted information while preserving the original model&rsquo;s utility, improving both forgetting and retained performance on standard unlearning benchmarks.</p>
           </div>
         </div>
 
@@ -356,11 +559,21 @@
 
         document.querySelectorAll('.publication').forEach(pub => {
           const tags = pub.dataset.tags.split(' ');
-          const show = filter === 'all' || tags.includes(filter);
+          const isSafetyDupe = tags.includes('safety-grouped');
+          let show;
+          if (filter === 'safety') {
+            show = isSafetyDupe;
+          } else if (filter === 'all') {
+            show = !isSafetyDupe;
+          } else {
+            show = tags.includes(filter);
+          }
           pub.style.display = show ? 'grid' : 'none';
         });
 
         document.getElementById('evaluation-intro').hidden = filter !== 'evaluation';
+        document.getElementById('optimization-intro').hidden = filter !== 'optimization';
+        document.getElementById('safety-intro').hidden = filter !== 'safety';
       });
     });
 
