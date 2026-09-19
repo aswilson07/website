@@ -626,17 +626,21 @@ html {
   border-color: rgba(26, 23, 19, 0.4);
 }
 
-/* ---- Evaluation intro (Evaluation filter only) ---- */
-.evaluation-intro {
+/* ---- Topic intros (shown only under their own filter) ---- */
+.evaluation-intro,
+.optimization-intro,
+.safety-intro {
   display: none;
   background: #fff;
 }
 
-.evaluation-intro:not([hidden]) {
+.evaluation-intro:not([hidden]),
+.optimization-intro:not([hidden]),
+.safety-intro:not([hidden]) {
   display: block;
 }
 
-.evaluation-intro-inner {
+.topic-intro-inner {
   display: grid;
   grid-template-columns: 170px 1fr;
   gap: 40px;
@@ -646,14 +650,14 @@ html {
   border-bottom: 1px solid rgba(26, 23, 19, 0.1);
 }
 
-.evaluation-intro-label {
+.topic-intro-label {
   font: 600 12px/1.4 'Libre Franklin', sans-serif;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: oklch(0.45 0.13 70);
 }
 
-.evaluation-intro p {
+.topic-intro-inner p {
   margin: 0;
   max-width: 68ch;
   font: 400 15px/1.65 'Libre Franklin', sans-serif;
@@ -661,8 +665,8 @@ html {
 }
 
 /* ---- Thematic grouping ----
-   Every rule below is scoped to body[data-filter="evaluation"], so the
-   Selected / All / Optimization / Safety views render exactly as before. */
+   Everything below is scoped to the grouped filters, so Selected / All /
+   and the ungrouped filters keep rendering exactly as before. */
 
 .pub-group-head {
   display: none;
@@ -670,18 +674,20 @@ html {
   border-top: 1px solid rgba(26, 23, 19, 0.1);
 }
 
-body[data-filter='evaluation'] .pub-group-head {
+body[data-filter='evaluation'] .pub-group-evaluation .pub-group-head,
+body[data-filter='optimization'] .pub-group-optimization .pub-group-head,
+body[data-filter='safety'] .pub-group-safety .pub-group-head {
   display: block;
 }
 
-body[data-filter='evaluation'] .pub-group:first-of-type .pub-group-head {
+/* first group of a topic sits under the intro rule â€” no doubled line */
+.pub-group-lead .pub-group-head {
   border-top: none;
   padding-top: 34px;
 }
 
 .pub-group-question {
   margin: 0;
-  max-width: 100ch;
   font: 400 27px/1.25 'Newsreader', serif;
   letter-spacing: -0.01em;
   color: #1a1713;
@@ -695,46 +701,67 @@ body[data-filter='evaluation'] .pub-group:first-of-type .pub-group-head {
   color: rgba(26, 23, 19, 0.58);
 }
 
-/* In the grouped view the group header owns the rule above each block */
-body[data-filter='evaluation'] .pub-group .publication {
+/* In a grouped view the group header owns the rule above each block */
+body[data-filter='evaluation'] .pub-group-evaluation .publication,
+body[data-filter='optimization'] .pub-group-optimization .publication,
+body[data-filter='safety'] .pub-group-safety .publication {
   border-bottom: none;
   border-top: 1px solid rgba(26, 23, 19, 0.1);
 }
 
-/* ---- Per-row variants: default markup vs. Evaluation-view markup ---- */
+/* Safety rows are written in grouped form already â€” link the venue directly */
+.pub-group-safety .pub-meta a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(139, 105, 20, 0.4);
+}
 
-/* Venue is plain text everywhere, a link in the grouped view */
+.pub-group-safety .pub-meta a:hover {
+  color: oklch(0.45 0.13 70);
+  border-bottom-color: rgba(139, 105, 20, 0.7);
+}
+
+/* ---- Per-row variants: default markup vs. grouped-view markup ---- */
+
 .pub-venue-link,
-.pub-authors-eval,
-.pub-description-eval {
+.pub-authors-grouped,
+.pub-description-grouped {
   display: none;
 }
 
-body[data-filter='evaluation'] .pub-venue-plain,
-body[data-filter='evaluation'] .pub-authors-default,
-body[data-filter='evaluation'] .pub-description-default {
+body[data-filter='evaluation'] .pub-group-evaluation .pub-venue-plain,
+body[data-filter='evaluation'] .pub-group-evaluation .pub-authors-flat,
+body[data-filter='evaluation'] .pub-group-evaluation .pub-description-flat,
+body[data-filter='optimization'] .pub-group-optimization .pub-venue-plain,
+body[data-filter='optimization'] .pub-group-optimization .pub-authors-flat,
+body[data-filter='optimization'] .pub-group-optimization .pub-description-flat {
   display: none;
 }
 
-body[data-filter='evaluation'] .pub-venue-link {
+body[data-filter='evaluation'] .pub-group-evaluation .pub-venue-link,
+body[data-filter='optimization'] .pub-group-optimization .pub-venue-link {
   display: inline;
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid rgba(139, 105, 20, 0.4);
 }
 
-body[data-filter='evaluation'] .pub-venue-link:hover {
+body[data-filter='evaluation'] .pub-group-evaluation .pub-venue-link:hover,
+body[data-filter='optimization'] .pub-group-optimization .pub-venue-link:hover {
   color: oklch(0.45 0.13 70);
   border-bottom-color: rgba(139, 105, 20, 0.7);
 }
 
-body[data-filter='evaluation'] .pub-authors-eval,
-body[data-filter='evaluation'] .pub-description-eval {
+body[data-filter='evaluation'] .pub-group-evaluation .pub-authors-grouped,
+body[data-filter='evaluation'] .pub-group-evaluation .pub-description-grouped,
+body[data-filter='optimization'] .pub-group-optimization .pub-authors-grouped,
+body[data-filter='optimization'] .pub-group-optimization .pub-description-grouped {
   display: block;
 }
 
-/* Long title tails are hidden only in the grouped view */
-body[data-filter='evaluation'] .pub-title-rest {
+/* Long title tails are hidden only in a grouped view */
+body[data-filter='evaluation'] .pub-group-evaluation .pub-title-rest,
+body[data-filter='optimization'] .pub-group-optimization .pub-title-rest {
   display: none;
 }
 
@@ -974,19 +1001,18 @@ body.menu-open {
     display: block;
   }
 
-  .evaluation-intro-inner {
+  .topic-intro-inner {
     grid-template-columns: 1fr;
     gap: 12px;
     padding: 24px 24px 22px;
   }
 
-  body[data-filter='evaluation'] .pub-group-head {
+  .pub-group-head {
     padding: 30px 0 14px;
   }
 
   .pub-group-question {
     font-size: 23px;
-    max-width: none;
   }
 
   .hero-dark {
