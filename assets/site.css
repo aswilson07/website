@@ -681,7 +681,7 @@ body[data-filter='evaluation'] .pub-group:first-of-type .pub-group-head {
 
 .pub-group-question {
   margin: 0;
-  max-width: 24ch;
+  max-width: 40ch;
   font: 400 27px/1.25 'Newsreader', serif;
   letter-spacing: -0.01em;
   color: #1a1713;
