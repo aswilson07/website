@@ -626,7 +626,7 @@ html {
   border-color: rgba(26, 23, 19, 0.4);
 }
 
-/* Evaluation intro â€” shown only under the Evaluation filter */
+/* ---- Evaluation intro (Evaluation filter only) ---- */
 .evaluation-intro {
   display: none;
   background: #fff;
@@ -660,7 +660,10 @@ html {
   color: #26221d;
 }
 
-/* Thematic group headers (Evaluation filter only) */
+/* ---- Thematic grouping ----
+   Every rule below is scoped to body[data-filter="evaluation"], so the
+   Selected / All / Optimization / Safety views render exactly as before. */
+
 .pub-group-head {
   display: none;
   padding: 40px 0 18px;
@@ -692,26 +695,47 @@ body[data-filter='evaluation'] .pub-group:first-of-type .pub-group-head {
   color: rgba(26, 23, 19, 0.58);
 }
 
-/* Rows inside a group: the group header owns the rule above it */
-.pub-group .publication {
+/* In the grouped view the group header owns the rule above each block */
+body[data-filter='evaluation'] .pub-group .publication {
   border-bottom: none;
   border-top: 1px solid rgba(26, 23, 19, 0.1);
 }
 
-.publications-list > .pub-group:last-of-type .publication:last-child {
-  border-bottom: none;
+/* ---- Per-row variants: default markup vs. Evaluation-view markup ---- */
+
+/* Venue is plain text everywhere, a link in the grouped view */
+.pub-venue-link,
+.pub-authors-eval,
+.pub-description-eval {
+  display: none;
 }
 
-/* Venue doubles as the paper link inside groups */
-.pub-group .pub-meta a {
+body[data-filter='evaluation'] .pub-venue-plain,
+body[data-filter='evaluation'] .pub-authors-default,
+body[data-filter='evaluation'] .pub-description-default {
+  display: none;
+}
+
+body[data-filter='evaluation'] .pub-venue-link {
+  display: inline;
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid rgba(139, 105, 20, 0.4);
 }
 
-.pub-group .pub-meta a:hover {
+body[data-filter='evaluation'] .pub-venue-link:hover {
   color: oklch(0.45 0.13 70);
   border-bottom-color: rgba(139, 105, 20, 0.7);
+}
+
+body[data-filter='evaluation'] .pub-authors-eval,
+body[data-filter='evaluation'] .pub-description-eval {
+  display: block;
+}
+
+/* Long title tails are hidden only in the grouped view */
+body[data-filter='evaluation'] .pub-title-rest {
+  display: none;
 }
 
 .publications-list {
