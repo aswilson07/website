@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,158 +55,89 @@
     <main class="page-content-new">
 
       <!-- Optimization -->
-      <div class="topic-section">
-        <div class="topic-icon-wrapper">
-          <div class="topic-symbol">∇</div>
-          <h2 class="topic-title">Optimization</h2>
+      <section class="research-topic">
+        <div class="research-topic-head">
+          <div class="research-topic-label"><span class="research-topic-symbol">&nabla;</span>Optimization</div>
+          <p>Optimization and sampling determine how models are trained and how uncertainty is quantified at scale. We study the geometric and dynamical structure these problems share, using it to design faster algorithms and to preserve accuracy when learning must operate under real constraints, such as privacy, limited computation, and reduced precision.</p>
         </div>
 
-        <div class="topic-content">
-          <p>
-            We develop the algorithmic foundations of optimization, sampling,
-            and learning. A central theme of our work is that these areas are
-            deeply connected: geometric and dynamical ideas developed for one
-            problem can often reveal new algorithms for another. We also study
-            how optimization changes under the constraints of modern machine
-            learning systems, including privacy requirements, limited
-            computation and communication, and reduced numerical precision.
-            Across these directions, we seek structural principles that make
-            learning algorithms more efficient and adaptive.
-          </p>
-
-          <div class="topic-questions">
-            <p>
-              <strong>Geometry and dynamics.</strong>
-              What common principles connect optimization and sampling?
-            </p>
-
-            <p>
-              <strong>Adaptivity.</strong>
-              How can algorithms exploit information revealed during computation
-              rather than relying on conservative parameters chosen in advance?
-            </p>
-
-            <p>
-              <strong>Efficiency under constraints.</strong>
-              How can structure, randomization, and compression reduce the
-              statistical and computational costs imposed by privacy, precision,
-              and limited resources?
-            </p>
-          </div>
-
-          <p class="topic-link">
-            <a href="publications.html?filter=optimization">
-              See related publications →
-            </a>
-          </p>
+        <div class="research-question">
+          <h3>How do models learn efficiently?</h3>
+          <p>Geometry and dynamics for optimization and sampling. We study the structural principles that connect optimization and sampling, and how algorithms can adapt to information revealed during computation rather than relying on parameters chosen in advance.</p>
         </div>
-      </div>
+
+        <div class="research-question">
+          <h3>How can learning remain effective under constraints?</h3>
+          <p>Preserving utility under privacy and resource constraints. We study how structure, randomization, and compression can reduce the statistical and computational costs imposed by privacy, limited precision, and limited resources.</p>
+        </div>
+
+        <p class="topic-link">
+          <a href="publications.html?filter=optimization">See related publications &rarr;</a>
+        </p>
+      </section>
 
 
       <!-- Safety -->
-      <div class="topic-section">
-        <div class="topic-icon-wrapper">
-          <div class="topic-symbol">◆</div>
-          <h2 class="topic-title">Safety</h2>
+      <section class="research-topic">
+        <div class="research-topic-head">
+          <div class="research-topic-label"><span class="research-topic-symbol">&#9670;</span>Safety</div>
+          <p>AI systems increasingly mediate what people create, believe, and receive. We develop technical methods for detecting and controlling harmful model behavior, and mathematical, empirical, and normative frameworks for understanding how these systems shape human agency, epistemic diversity, and access to opportunity.</p>
         </div>
 
-        <div class="topic-content">
-          <p>
-            We develop methods and foundations for understanding and mitigating
-            harms from AI systems. One thrust focuses on child safety and
-            image-based abuse, including methods for detecting and auditing
-            models adapted for harmful purposes without requiring evaluators to
-            generate or inspect illegal or abusive content. A second thrust
-            studies epistemic harms: ways in which AI systems can distort what
-            people know, believe, imagine, or regard as possible. This includes
-            homogenization, where widespread AI adoption can reduce diversity
-            across creative, informational, and institutional outcomes, and
-            sycophancy, where systems prioritize agreement or affirmation over
-            truthfulness, critical reflection, and user agency.
-          </p>
-
-          <div class="topic-questions">
-            <p>
-              <strong>How can harmful capabilities be detected safely?</strong>
-              We study methods for auditing dangerous model adaptations without
-              requiring harmful behavior to be generated.
-            </p>
-
-            <p>
-              <strong>How do AI systems shape human judgment?</strong>
-              We study behaviors such as sycophancy that can influence users'
-              beliefs, decisions, and autonomy.
-            </p>
-
-            <p>
-              <strong>How does widespread AI use reshape what is available to us?</strong>
-              We study homogenization and related structural effects on diversity,
-              creativity, and opportunity.
-            </p>
-          </div>
-
-          <p class="topic-link">
-            <a href="publications.html?filter=safety">
-              See related publications →
-            </a>
-          </p>
+        <div class="research-question">
+          <h3>How can harmful model behavior be detected and controlled?</h3>
+          <p>Non-generative auditing, model steering, and durable unlearning. We study how dangerous model adaptations can be audited without requiring evaluators to generate or inspect harmful content, and whether safety interventions persist through later model updates.</p>
         </div>
-      </div>
+
+        <div class="research-question">
+          <h3>How do AI systems affect human agency and collective knowledge?</h3>
+          <p>Sycophancy, co-creation, and epistemic diversity. We study behaviors that can distort what people know, believe, or imagine, including systems that prioritize agreement over truthfulness and the homogenization of creative and informational outcomes.</p>
+        </div>
+
+        <div class="research-question">
+          <h3>How do algorithms reshape access to opportunity?</h3>
+          <p>Pluralism, competition, and consequential allocation. We study how algorithmic systems collectively structure who receives scarce goods and opportunities, and what fair allocation requires when predictions are uncertain.</p>
+        </div>
+
+        <p class="topic-link">
+          <a href="publications.html?filter=safety">See related publications &rarr;</a>
+        </p>
+      </section>
 
 
       <!-- Evaluation -->
-      <div class="topic-section">
-        <div class="topic-icon-wrapper">
-          <div class="topic-symbol">✓</div>
-          <h2 class="topic-title">Evaluation</h2>
+      <section class="research-topic">
+        <div class="research-topic-head">
+          <div class="research-topic-label"><span class="research-topic-symbol">&#10003;</span>Evaluation</div>
+          <p>Evaluation is an inference problem: observed behavior is evidence about capabilities and harms that cannot be measured directly. We develop metrics, scoring rules, and protocols that specify what is being measured, establish what the evidence can support about it, and tie those conclusions to the decisions and societal consequences that ultimately matter.</p>
         </div>
 
-        <div class="topic-content">
-          <p>
-            Evaluation is an inference problem. We study how to define what
-            should be measured, determine what outcomes matter, and understand
-            what conclusions observations can support about the capabilities,
-            behaviors, and harms of AI systems. Our goal is to develop an
-            evaluation science in which benchmarks and metrics are not treated
-            as ends in themselves, but as evidence used to support claims about
-            systems and their consequences.
-          </p>
-
-          <div class="topic-questions">
-            <p>
-              <strong>What are we trying to measure?</strong>
-              How should latent constructs such as capability, sycophancy, or
-              successful assistance be defined and operationalized?
-            </p>
-
-            <p>
-              <strong>What outcomes actually matter?</strong>
-              How should evaluation reflect downstream decisions, consequences,
-              and the priorities of the deployment setting?
-            </p>
-
-            <p>
-              <strong>What does the evidence establish?</strong>
-              How do context, interaction, model updates, and constraints on what
-              can safely be observed affect the conclusions an evaluation can
-              support?
-            </p>
-          </div>
-
-          <p class="topic-link">
-            <a href="publications.html?filter=evaluation">
-              See related publications →
-            </a>
-          </p>
+        <div class="research-question">
+          <h3>What are we trying to measure?</h3>
+          <p>Constructs and valid operationalizations. We study how latent constructs such as capability, sycophancy, or successful assistance should be defined and turned into measurements that support the claims made about them.</p>
         </div>
-      </div>
+
+        <div class="research-question">
+          <h3>What does the evidence establish?</h3>
+          <p>Context dependence, robustness, and the limits of inference. We study how context, interaction, model updates, and constraints on what can safely be observed affect the conclusions an evaluation can support.</p>
+        </div>
+
+        <div class="research-question">
+          <h3>What outcomes actually matter?</h3>
+          <p>Decision-relevant metrics and downstream consequences. We study how evaluation should reflect the decisions predictions support, the costs of different errors, and the priorities of the deployment setting.</p>
+        </div>
+
+        <p class="topic-link">
+          <a href="publications.html?filter=evaluation">See related publications &rarr;</a>
+        </p>
+      </section>
 
     </main>
 
 
     <!-- Footer -->
     <footer class="footer-new">
-      © 2026 Ashia C. Wilson
+      &copy; 2026 Ashia C. Wilson
     </footer>
 
   </div>
