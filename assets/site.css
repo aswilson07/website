@@ -839,6 +839,147 @@ body[data-filter='optimization'] .pub-group-optimization .pub-title-rest {
   max-width: 66ch;
 }
 
+
+/* ---- Research topics page: mirrors the publications grouping system ---- */
+.research-topic {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 56px;
+}
+
+.research-topic + .research-topic {
+  border-top: 1px solid rgba(26, 23, 19, 0.12);
+}
+
+.research-topic-head {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 40px;
+  padding: 40px 0 0;
+}
+
+.research-topic-label {
+  font: 600 12px/1.4 'Libre Franklin', sans-serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: oklch(0.45 0.13 70);
+}
+
+.research-topic-label .research-topic-symbol {
+  display: block;
+  margin-bottom: 8px;
+  font: 400 30px/1 'Newsreader', serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.research-topic-head p {
+  margin: 0;
+  max-width: 68ch;
+  font: 400 15px/1.65 'Libre Franklin', sans-serif;
+  color: #26221d;
+}
+
+.research-question {
+  padding: 30px 0 0;
+}
+
+.research-question + .research-question {
+  border-top: 1px solid rgba(26, 23, 19, 0.1);
+  margin-top: 30px;
+}
+
+.research-question:first-child {
+  margin-top: 34px;
+  padding-top: 0;
+}
+
+.research-question h3 {
+  margin: 0;
+  font: 400 27px/1.25 'Newsreader', serif;
+  letter-spacing: -0.01em;
+  color: #1a1713;
+  text-wrap: pretty;
+}
+
+.research-question p {
+  margin: 7px 0 0;
+  max-width: 68ch;
+  font: 400 13.5px/1.6 'Libre Franklin', sans-serif;
+  color: rgba(26, 23, 19, 0.58);
+}
+
+.research-topic .topic-link {
+  margin: 26px 0 40px;
+}
+
+/* ---- Home page: research area cards ---- */
+.research-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 22px;
+  background: rgba(26, 23, 19, 0.12);
+  border: 1px solid rgba(26, 23, 19, 0.12);
+}
+
+.research-card {
+  display: block;
+  padding: 20px 20px 22px;
+  background: #fff;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.research-card:hover {
+  background: #faf7f2;
+}
+
+.research-card-symbol {
+  font: 400 26px/1 'Newsreader', serif;
+  color: oklch(0.45 0.13 70);
+}
+
+.research-card h3 {
+  margin: 12px 0 0;
+  font: 600 14px/1.3 'Libre Franklin', sans-serif;
+  letter-spacing: 0.02em;
+  color: #1a1713;
+}
+
+.research-card p {
+  margin: 7px 0 0;
+  font: 400 13px/1.6 'Libre Franklin', sans-serif;
+  color: rgba(26, 23, 19, 0.62);
+}
+
+.research-card-more {
+  display: block;
+  margin-top: 12px;
+  font: 500 12.5px/1 'Libre Franklin', sans-serif;
+  color: oklch(0.45 0.13 70);
+}
+
+@media (max-width: 760px) {
+  .research-topic {
+    padding: 0 24px;
+  }
+
+  .research-topic-head {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding-top: 30px;
+  }
+
+  .research-question h3 {
+    font-size: 23px;
+  }
+
+  .research-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Talks Page Styles */
 .talks-section {
   display: grid;
