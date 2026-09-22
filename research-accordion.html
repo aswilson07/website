@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Topics (accordion) | Ashia C. Wilson</title>
+  <link rel="icon" href="assets/icons/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+      <nav class="top-nav">
+        <div class="site-title">Ashia C. Wilson</div>
+
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="bio.html" class="nav-link">Bio</a>
+          <a href="group.html" class="nav-link">Group</a>
+          <a href="research.html" class="nav-link active">Topics</a>
+          <a href="publications.html" class="nav-link">Publications</a>
+          <a href="talks.html" class="nav-link">Talks</a>
+          <a href="new_students.html" class="nav-link">Prospective Students</a>
+        </div>
+      </nav>
+
+      <div class="page-hero-content">
+        <h1>Research</h1>
+
+        <p class="research-description">
+          Dr. Ashia Wilson directs the
+          <strong>Optimization, Safety, and Evaluation (OSE) Lab</strong>.
+        </p>
+
+        <p class="research-intro">
+          Our research develops the foundations needed to build machine learning
+          systems that are efficient, safe, and meaningfully evaluated. We study
+          how mathematical structure can be used to design better optimization
+          and sampling algorithms, how AI systems can affect human knowledge,
+          judgment, and agency, and how evaluation can support valid conclusions
+          about their capabilities, limitations, and societal consequences.
+        </p>
+      </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="page-content-new">
+      <div class="research-accordion">
+        <details class="research-acc" open>
+          <summary>
+            <span class="research-acc-symbol">&nabla;</span>
+            <span>
+              <span class="research-acc-title">Optimization</span>
+              <span class="research-acc-teaser">Geometry, dynamics, and efficiency for optimization and sampling.</span>
+            </span>
+            <span class="research-acc-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="research-acc-body">
+            <p>Optimization and sampling determine how models are trained and how uncertainty is quantified at scale. We study the geometric and dynamical structure these problems share, using it to design faster algorithms and to preserve accuracy when learning must operate under real constraints, such as privacy, limited computation, and reduced precision.</p>
+            <div class="research-acc-q">
+              <h3>How do models learn efficiently?</h3>
+              <p>Geometry and dynamics for optimization and sampling. We study the structural principles that connect optimization and sampling, and how algorithms can adapt to information revealed during computation rather than relying on parameters chosen in advance.</p>
+            </div>
+            <div class="research-acc-q">
+              <h3>How can learning remain effective under constraints?</h3>
+              <p>Preserving utility under privacy and resource constraints. We study how structure, randomization, and compression can reduce the statistical and computational costs imposed by privacy, limited precision, and limited resources.</p>
+            </div>
+            <p class="topic-link"><a href="publications.html?filter=optimization">See related publications &rarr;</a></p>
+          </div>
+        </details>
+
+        <details class="research-acc">
+          <summary>
+            <span class="research-acc-symbol">&#9670;</span>
+            <span>
+              <span class="research-acc-title">Safety</span>
+              <span class="research-acc-teaser">Detecting harmful behavior; agency, knowledge, and opportunity.</span>
+            </span>
+            <span class="research-acc-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="research-acc-body">
+            <p>AI systems increasingly mediate what people create, believe, and receive. We develop technical methods for detecting and controlling harmful model behavior, and mathematical, empirical, and normative frameworks for understanding how these systems shape human agency, epistemic diversity, and access to opportunity.</p>
+            <div class="research-acc-q">
+              <h3>How can harmful model behavior be detected and controlled?</h3>
+              <p>Non-generative auditing, model steering, and durable unlearning. We study how dangerous model adaptations can be audited without requiring evaluators to generate or inspect harmful content, and whether safety interventions persist through later model updates.</p>
+            </div>
+            <div class="research-acc-q">
+              <h3>How do AI systems affect human agency and collective knowledge?</h3>
+              <p>Sycophancy, co-creation, and epistemic diversity. We study behaviors that can distort what people know, believe, or imagine, including systems that prioritize agreement over truthfulness and the homogenization of creative and informational outcomes.</p>
+            </div>
+            <div class="research-acc-q">
+              <h3>How do algorithms reshape access to opportunity?</h3>
+              <p>Pluralism, competition, and consequential allocation. We study how algorithmic systems collectively structure who receives scarce goods and opportunities, and what fair allocation requires when predictions are uncertain.</p>
+            </div>
+            <p class="topic-link"><a href="publications.html?filter=safety">See related publications &rarr;</a></p>
+          </div>
+        </details>
+
+        <details class="research-acc">
+          <summary>
+            <span class="research-acc-symbol">&#10003;</span>
+            <span>
+              <span class="research-acc-title">Evaluation</span>
+              <span class="research-acc-teaser">Valid measurement and decision-relevant conclusions.</span>
+            </span>
+            <span class="research-acc-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="research-acc-body">
+            <p>Evaluation is an inference problem: observed behavior is evidence about capabilities and harms that cannot be measured directly. We develop metrics, scoring rules, and protocols that specify what is being measured, establish what the evidence can support about it, and tie those conclusions to the decisions and societal consequences that ultimately matter.</p>
+            <div class="research-acc-q">
+              <h3>What are we trying to measure?</h3>
+              <p>Constructs and valid operationalizations. We study how latent constructs such as capability, sycophancy, or successful assistance should be defined and turned into measurements that support the claims made about them.</p>
+            </div>
+            <div class="research-acc-q">
+              <h3>What does the evidence establish?</h3>
+              <p>Context dependence, robustness, and the limits of inference. We study how context, interaction, model updates, and constraints on what can safely be observed affect the conclusions an evaluation can support.</p>
+            </div>
+            <div class="research-acc-q">
+              <h3>What outcomes actually matter?</h3>
+              <p>Decision-relevant metrics and downstream consequences. We study how evaluation should reflect the decisions predictions support, the costs of different errors, and the priorities of the deployment setting.</p>
+            </div>
+            <p class="topic-link"><a href="publications.html?filter=evaluation">See related publications &rarr;</a></p>
+          </div>
+        </details>
+      </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer-new">
+      &copy; 2026 Ashia C. Wilson
+    </footer>
+
+  </div>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
