@@ -49,7 +49,7 @@
     <section class="evaluation-intro" id="evaluation-intro" aria-label="Evaluation research overview" hidden>
       <div class="topic-intro-inner">
         <div class="topic-intro-label">Evaluation</div>
-        <p>Evaluation is an inference and decision problem. We develop statistical and decision-theoretic theory, metrics, scoring rules, and evaluation protocols for turning latent constructs into valid measurements, determining what observed behavior supports about system capabilities, behaviors, and harms, and aligning evaluation with the decisions and societal consequences that ultimately matter.</p>
+        <p>Evaluation is an inference and identification problem: observed behavior is evidence about capabilities and harms that cannot always be measured directly, and the quantities we use to evaluate systems may themselves be underspecified. We develop metrics, scoring rules, and protocols that specify what is being measured, determine when it is identifiable from the available evidence, and connect those conclusions to the decisions and societal consequences that ultimately matter.</p>
       </div>
     </section>
 
@@ -57,7 +57,7 @@
     <section class="optimization-intro" id="optimization-intro" aria-label="Optimization research overview" hidden>
       <div class="topic-intro-inner">
         <div class="topic-intro-label">Optimization</div>
-        <p>Optimization and sampling are computational foundations of modern AI, science, and engineering. They govern how models are trained, how uncertainty is represented, and how large-scale inference problems are solved. We develop mathematical principles for making these computations more efficient and for preserving utility when learning systems must satisfy human-centered requirements, from protecting sensitive information to reducing the resources required to store and deploy models.</p>
+        <p>Optimization and sampling determine how models are trained and how uncertainty is quantified at scale. We study the geometric and dynamical structure these problems share, using it to design faster algorithms and to preserve accuracy when learning must operate under real constraints, such as privacy, limited computation, and reduced precision.</p>
       </div>
     </section>
 
@@ -65,7 +65,7 @@
     <section class="safety-intro" id="safety-intro" aria-label="Safety research overview" hidden>
       <div class="topic-intro-inner">
         <div class="topic-intro-label">Safety</div>
-        <p>AI safety asks how to ensure that AI systems support rather than undermine the conditions for individual and collective human flourishing. We develop technical methods for detecting and controlling harmful model behavior, together with mathematical, empirical, and normative frameworks for understanding how AI systems shape human agency, epistemic diversity, and access to opportunity.</p>
+        <p>AI systems increasingly mediate what people create, believe, and receive. We develop technical methods for detecting and controlling harmful model behavior, and mathematical, empirical, and normative frameworks for understanding how these systems shape human agency, epistemic diversity, and access to opportunity.</p>
       </div>
     </section>
 
@@ -108,6 +108,16 @@
           <div class="pub-group-head">
             <h2 class="pub-group-question">What does the evidence establish?</h2>
             <p class="pub-group-sub">Context dependence, robustness, and the limits of inference.</p>
+          </div>
+
+          <div class="publication" data-tags="evaluation">
+            <div class="pub-meta">NEURIPS 2026</div>
+            <div class="pub-content">
+              <h3>When Are Semivalue-Based Decisions Identifiable? Robust Data Selection under Utility Ambiguity</h3>
+              <p class="pub-authors pub-authors-flat">with Hannah Diehl, Justin Steil &middot; <span class="pub-topic">&#10003; Evaluation</span></p>
+              <p class="pub-authors pub-authors-grouped">with Hannah Diehl, Justin Steil</p>
+              <p class="pub-description">Shapley values and other semivalues are often used to rank training examples for data selection, but these rankings can depend on arbitrary choices in how model utility is specified. We characterize when the resulting selection decisions are invariant to this utility ambiguity, and develop algorithms that either certify robustness or produce explicit witnesses showing that the selected data are not uniquely determined by the underlying task.</p>
+            </div>
           </div>
 
           <div class="publication" data-tags="safety evaluation selected">
