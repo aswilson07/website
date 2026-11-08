@@ -1435,3 +1435,6 @@ body { background: #fff; color: #222; }
 .pub-group-sub { font-size: 12.5px; }
 .research-card h3 { font-size: 16px; }
 .research-card p { font-size: 12.5px; line-height: 1.55; }
+
+/* Hide legacy topic symbols if an older page still includes them */
+.research-acc-symbol, .research-topic-symbol, .research-card-symbol { display: none; }
